@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/xdp_5"
+        android:layout_marginLeft="@dimen/xdp_5"
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/xdp_0"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/xdp_5"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/recommed_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/photo"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_20"
+                    android:layout_height="@dimen/xdp_20"
+                    android:id="@+id/recommed_video"
+
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/xdp_12"
+                    android:layout_marginLeft="@dimen/xdp_9"
+                    android:src="@mipmap/bofang"
+                    />
+            </FrameLayout>
+            <TextView
+
+                android:layout_marginTop="@dimen/xdp_10"
+                android:id="@+id/recommed_title"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/xdp_10"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/xdp_10"
+                android:textSize="@dimen/xsp_13"
+                android:textColor="@color/black"
+                android:text="我是标题"
+                android:maxLines="2"
+                />
+            <RelativeLayout
+
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/xdp_8"
+                android:layout_marginBottom="@dimen/xdp_10"
+                android:layout_height="wrap_content"
+
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/xdp_19"
+                    android:layout_height="@dimen/xdp_19"
+                    android:id="@+id/recommed_head"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_toRightOf="@id/recommed_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recommed_name"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLength="8"
+                    android:layout_marginLeft="@dimen/xdp_5"
+                    android:text="用户昵称"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/xsp_11"
+                    android:textColor="@color/black"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/recommed_likenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/xsp_13"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/xdp_10"
+                    android:textColor="@color/black"
+                    android:text="12"
+                    />
+
+                <ImageView
+                    android:layout_toLeftOf="@id/recommed_likenum"
+                    android:layout_marginRight="@dimen/xdp_5"
+                    android:id="@+id/recommed_like"
+                    android:layout_width="@dimen/xdp_13"
+                    android:layout_height="@dimen/xdp_11"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/aixin" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

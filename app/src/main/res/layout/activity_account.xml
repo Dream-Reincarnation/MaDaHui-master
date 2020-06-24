@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        layout="@layout/item_bar"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1" />
+    <LinearLayout
+        android:id="@+id/account_Wechat_lin"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_15"
+            android:text="关联微信号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/account_wechat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/xdp_15"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_13" />
+
+        <ImageView
+
+            android:layout_width="@dimen/xdp_10"
+            android:layout_height="@dimen/xdp_17"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/xdp_13"
+            android:src="@mipmap/gengduo"
+            />
+    </LinearLayout
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_height="@dimen/xdp_1" />
+    <LinearLayout
+        android:id="@+id/account_phone_lin"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_15"
+            android:text="绑定手机号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/account_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/xdp_15"
+            android:layout_weight="1"
+            android:text="未绑定"
+            android:gravity="right|center"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_13" />
+
+        <ImageView
+
+            android:layout_width="@dimen/xdp_10"
+            android:layout_height="@dimen/xdp_17"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/xdp_13"
+            android:src="@mipmap/gengduo"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_height="@dimen/xdp_1" />
+    <LinearLayout
+        android:id="@+id/account_mailbox_lin"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_15"
+            android:text="绑定邮箱"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/account_mailbox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/xdp_15"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_13" />
+
+        <ImageView
+            android:layout_width="@dimen/xdp_10"
+            android:layout_height="@dimen/xdp_17"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/xdp_13"
+            android:src="@mipmap/gengduo"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_height="@dimen/xdp_1" />
+    <LinearLayout
+        android:id="@+id/account_deposite_lin"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_15"
+            android:text="提现账号绑定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/account_deposite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/xdp_15"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_13" />
+
+        <ImageView
+            android:layout_width="@dimen/xdp_10"
+            android:layout_height="@dimen/xdp_17"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/xdp_13"
+            android:src="@mipmap/gengduo"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_height="@dimen/xdp_1" />
+    <LinearLayout
+        android:id="@+id/account_bind_lin"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_15"
+            android:text="第三方账号绑定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/account_bind"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/xdp_15"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_13" />
+
+        <ImageView
+            android:layout_width="@dimen/xdp_10"
+            android:layout_height="@dimen/xdp_17"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/xdp_13"
+            android:src="@mipmap/gengduo"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_height="@dimen/xdp_1" />
+    <LinearLayout
+        android:id="@+id/account_paypass_lin"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_15"
+            android:text="支付密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/account_paypass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/xdp_15"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_13" />
+
+        <ImageView
+            android:layout_width="@dimen/xdp_10"
+            android:layout_height="@dimen/xdp_17"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/xdp_13"
+            android:src="@mipmap/gengduo"
+            />
+    </LinearLayout>
+</LinearLayout>

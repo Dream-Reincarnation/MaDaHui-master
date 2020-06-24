@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#0d0d0d"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/picjoin_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="30dp"
+            android:src="@mipmap/fanhui3" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/xdp_65"
+            android:layout_height="@dimen/xdp_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/dyna_follow"
+            android:text="下一步"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_marginTop="@dimen/xdp_8"
+        android:layout_below="@id/picjoin_top"
+        android:id="@+id/layout_palyer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <com.ajiani.maidahui.weight.cut.TCVideoEditView
+        android:id="@+id/video_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_50"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/xdp_20"
+        />
+    
+    
+    <TextView
+        android:id="@+id/tv_choose_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/video_edit_view"
+        android:layout_marginBottom="@dimen/xdp_10"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/btn_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/video_edit_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/xdp_10"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:background="@null"
+        android:src="@mipmap/dyna_video_rote"
+        android:text="rotate" />
+</RelativeLayout>

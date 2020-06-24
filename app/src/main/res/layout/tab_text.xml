@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_text"   android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="@dimen/xsp_15"
+    android:text="作品"
+    android:textColor="@color/black"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</TextView>

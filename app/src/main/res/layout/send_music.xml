@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/xdp_44"
+      android:text="音乐"
+      android:gravity="center"
+      android:textColor="@color/black"
+      android:textSize="@dimen/xsp_17"
+      />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:background="@color/background"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/xdp_13"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/xdp_73"
+        android:visibility="visible"
+        android:id="@+id/music_rel"
+        android:layout_gravity="center"
+        />
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_100"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/xdp_73"
+            android:layout_height="@dimen/xdp_73"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@color/background"
+            >
+            <ImageView
+                android:layout_marginTop="@dimen/xdp_16"
+                android:layout_width="@dimen/xdp_24"
+                android:layout_height="@dimen/xdp_24"
+                android:layout_gravity="center"
+                android:src="@mipmap/nav_icon_search"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音乐"
+                android:layout_gravity="center"
+                android:textSize="@dimen/xsp_11"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="@dimen/xdp_170"
+    android:id="@+id/vlogshop_lin"
+    android:layout_margin="@dimen/xdp_6"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/vlogshop_thumb"
+        android:layout_width="@dimen/xdp_47"
+        android:layout_height="@dimen/xdp_47"
+        android:src="@mipmap/photo"
+        />
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/xdp_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/vlogshop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_11"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:id="@+id/vlogshop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dyna_back"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/xsp_12"
+            />
+        <TextView
+            android:id="@+id/vlogshop_alerdy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/vlogshop_price"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/xsp_10"
+            android:layout_marginLeft="@dimen/xdp_10"
+            />
+    </RelativeLayout>
+</LinearLayout>

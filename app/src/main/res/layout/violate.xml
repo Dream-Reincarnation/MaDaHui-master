@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44">
+
+        <FrameLayout
+            android:id="@+id/violate_back"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_14"
+                android:layout_height="@dimen/xdp_28"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:src="@mipmap/fanhui" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="视频举报"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17" />
+
+    </FrameLayout>
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/violate_web"
+        />
+
+</LinearLayout>

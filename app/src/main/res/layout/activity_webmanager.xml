@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/webman_lin"
+    android:layout_height="match_parent">
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:visibility="gone"
+       android:layout_height="@dimen/xdp_44">
+       <ImageView
+           android:id="@+id/webman_back"
+           android:layout_width="@dimen/xdp_21"
+           android:layout_height="@dimen/xdp_24"
+           android:layout_marginLeft="@dimen/xdp_12"
+           android:src="@mipmap/fanhui"
+           android:layout_gravity="center|left"
+           />
+       <TextView
+           android:id="@+id/webman_title"
+           android:layout_width="wrap_content"
+           android:layout_gravity="center"
+           android:layout_height="wrap_content"
+           />
+   </FrameLayout>
+
+</LinearLayout>

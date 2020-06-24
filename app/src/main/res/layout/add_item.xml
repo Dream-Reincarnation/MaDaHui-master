@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    app:cardCornerRadius="@dimen/xdp_2"
+    app:cardElevation="@dimen/xdp_0"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/xdp_5"
+    android:layout_marginTop="@dimen/xdp_5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/xdp_5"
+        android:orientation="vertical">
+       <FrameLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/shop_img"
+            android:layout_width="@dimen/xdp_120"
+            android:layout_height="@dimen/xdp_140"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/photo" />
+
+        <ImageView
+            android:id="@+id/shop_check"
+            android:layout_width="@dimen/xdp_18"
+            android:layout_height="@dimen/xdp_18"
+
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/xdp_5"
+            android:layout_marginRight="@dimen/xdp_5"
+            android:src="@mipmap/addshop_unsel" />
+           <RelativeLayout
+               android:layout_width="@dimen/xdp_120"
+               android:alpha="0.6"
+               android:background="@color/black"
+               android:layout_gravity="bottom"
+               android:layout_height="@dimen/xdp_18">
+               <TextView
+                   android:id="@+id/shop_money"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="佣金￥0.0"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/xdp_5"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/xsp_10"
+
+                   />
+
+           </RelativeLayout>
+       </FrameLayout>
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xdp_5"
+            android:layout_marginTop="@dimen/xdp_5"
+            android:layout_marginRight="@dimen/xdp_10"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="店铺名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_12" />
+
+        <TextView
+            android:id="@+id/shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/xdp_7"
+            android:text="￥299"
+            android:textColor="@color/Thme"
+            android:textSize="@dimen/xsp_12" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

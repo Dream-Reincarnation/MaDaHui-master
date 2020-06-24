@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_text_receive"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/item_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#999999"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/xdp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/chat_item_header"
+                android:layout_width="@dimen/xdp_35"
+                android:layout_height="@dimen/xdp_35"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/chat_receiver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/xdp_10"
+                android:layout_toRightOf="@id/chat_item_header"
+                android:text="昵称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_12" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/xdp_6"
+                android:layout_below="@id/chat_receiver_name"
+                android:id="@+id/chat_item_layout_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/chat_item_header"
+                android:background="@drawable/message_text_receive"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="亲,对我的服务打个分吧"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_14" />
+
+                <TextView
+                    android:id="@+id/shop_comment"
+                    android:layout_width="@dimen/xdp_63"
+                    android:layout_height="@dimen/xdp_20"
+                    android:layout_marginTop="@dimen/xdp_19"
+                    android:background="@drawable/theml2"
+                    android:gravity="center"
+                    android:text="立即评价"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/xsp_11" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/chat_fram_check"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/xdp_10">
+
+            <ImageView
+                android:id="@+id/chat_img"
+                android:layout_width="@dimen/xdp_20"
+                android:layout_height="@dimen/xdp_20"
+                android:layout_gravity="center"
+                android:src="@mipmap/unsel" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

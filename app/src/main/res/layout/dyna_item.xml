@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/xdp_30"
+    android:id="@+id/dyna_lin"
+    android:layout_height="@dimen/xdp_110">
+     <ImageView
+         android:layout_width="@dimen/xdp_40"
+         android:layout_height="@dimen/xdp_40"
+         android:id="@+id/dyna_voice_img"
+         />
+     <TextView
+         android:id="@+id/dyna_voice_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/xsp_13"
+         android:textColor="@color/mine_unselect"
+         />
+</LinearLayout>

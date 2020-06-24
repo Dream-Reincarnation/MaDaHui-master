@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">dsd
+
+    <RelativeLayout
+        android:id="@+id/follow_rela"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_16"
+        android:layout_height="@dimen/xdp_40">
+
+        <ImageView
+            android:id="@+id/follow_head"
+            android:layout_width="@dimen/xdp_40"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/follow_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsp_15"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/xdp_10"
+            android:text="用户名称"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/follow_head"
+            />
+        <TextView
+            android:id="@+id/follow_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10月21日 15:56"
+            android:textSize="@dimen/xsp_11"
+            android:textColor="@color/mine_unselect"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/follow_head"
+            android:layout_marginLeft="@dimen/xdp_10"
+            android:layout_marginBottom="@dimen/xdp_2"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/follow_title"
+        android:layout_marginTop="@dimen/xdp_10"
+        android:layout_marginRight="@dimen/xdp_35"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/xsp_15"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/follow_lin"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+     <ImageView
+         android:visibility="gone"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/xdp_300"
+         android:id="@+id/follow_video_thumb"
+         />
+       <com.ajiani.maidahui.weight.MyJzPlayer
+           android:id="@+id/follow_video"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/xdp_10"
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:id="@+id/follow_item_rel"
+        android:layout_height="@dimen/xdp_60"/>
+
+     <RelativeLayout
+         android:layout_marginLeft="@dimen/xdp_12"
+         android:layout_marginTop="@dimen/xdp_15"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+         <RelativeLayout
+             android:id="@+id/follow_star_rela"
+             android:layout_width="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_height="wrap_content">
+             <com.ajiani.maidahui.weight.head.CircleImageView
+                 android:visibility="gone"
+                 android:id="@+id/follow_star_head"
+                 android:layout_width="@dimen/xdp_19"
+                 android:layout_height="@dimen/xdp_19"
+                 />
+             <RelativeLayout
+                 android:id="@+id/follow_star_relas"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+             <com.ajiani.maidahui.weight.head.CircleImageView
+                 android:id="@+id/follow_start_first"
+                 android:layout_width="@dimen/xdp_19"
+                 android:layout_height="@dimen/xdp_19"
+                 />
+             <com.ajiani.maidahui.weight.head.CircleImageView
+                 android:id="@+id/follow_start_second"
+                 android:layout_marginLeft="@dimen/xdp_14"
+                 android:layout_width="@dimen/xdp_19"
+                 android:layout_height="@dimen/xdp_19"
+                 />
+             </RelativeLayout>
+             <com.ajiani.maidahui.weight.head.CircleImageView
+                 android:id="@+id/follow_start_third"
+                 android:layout_marginLeft="@dimen/xdp_28"
+                 android:layout_width="@dimen/xdp_19"
+                 android:layout_height="@dimen/xdp_19"
+                 />
+             <TextView
+                 android:layout_toRightOf="@id/follow_start_third"
+                 android:layout_marginLeft="@dimen/xdp_5"
+                 android:id="@+id/follow_star_num"
+                 android:layout_width="wrap_content"
+
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:textSize="@dimen/xsp_13"
+                 android:textColor="@color/black"
+                 android:text="123次赞"
+                 />
+         </RelativeLayout>
+
+
+
+         <FrameLayout
+             android:id="@+id/attent_share"
+             android:layout_width="@dimen/xdp_25"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="@dimen/xdp_12"
+             android:layout_height="@dimen/xdp_25">
+         <ImageView
+             android:layout_width="@dimen/xdp_15"
+             android:layout_height="@dimen/xdp_15"
+             android:src="@mipmap/attent_share"
+             android:layout_gravity="center|right"
+
+             />
+         </FrameLayout>
+         <FrameLayout
+             android:id="@+id/attent_like_farm"
+             android:layout_width="@dimen/xdp_25"
+             android:layout_marginRight="@dimen/xdp_14"
+             android:layout_toLeftOf="@id/attent_share"
+             android:layout_height="@dimen/xdp_25">
+         <ImageView
+             android:id="@+id/attent_like"
+             android:layout_gravity="center|right"
+             android:layout_width="@dimen/xdp_15"
+             android:layout_height="@dimen/xdp_15"
+             android:src="@mipmap/mine_unlike"
+             />
+         </FrameLayout>
+         <FrameLayout
+             android:id="@+id/attent_comment"
+             android:layout_width="@dimen/xdp_25"
+             android:layout_height="@dimen/xdp_25"
+             android:layout_toLeftOf="@id/attent_like_farm"
+             android:layout_marginRight="@dimen/xdp_12"
+             >
+         <ImageView
+             android:layout_gravity="center|right"
+             android:layout_width="@dimen/xdp_15"
+             android:layout_height="@dimen/xdp_15"
+             android:src="@mipmap/attent_comment"
+             />
+         </FrameLayout>
+     </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/follow_comment_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:background="@mipmap/atten_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/xdp_10">
+
+        <TextView
+            android:id="@+id/follow_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xdp_17"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_12" />
+
+        <TextView
+            android:id="@+id/follow_first_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xdp_10"
+            android:layout_marginRight="@dimen/xdp_15"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_12" />
+
+        <TextView
+            android:id="@+id/follow_second_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xdp_8"
+            android:layout_marginRight="@dimen/xdp_15"
+            android:layout_marginBottom="@dimen/xdp_10"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_12" />
+    </LinearLayout>
+
+</LinearLayout>

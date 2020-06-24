@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.txrecord.ettect.VideoPlayLayout
+        android:id="@+id/video_play_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/video_bottom_layout" />
+
+    <RelativeLayout
+        android:id="@+id/video_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="#0d0d0d"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/play_control_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_60"
+            android:text="拖动选取封面"
+            android:background="@color/editer_bottom"
+            android:orientation="horizontal" />
+
+        <com.example.txrecord.weight.TimeLineView
+            android:id="@+id/timeline_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_60"
+            android:layout_below="@+id/play_control_layout"
+            android:background="@color/editer_bottom" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_100"
+        android:layout_alignParentBottom="true"
+        android:background="@color/editer_bottom"
+        android:paddingBottom="@dimen/xdp_8"
+        android:paddingLeft="@dimen/xdp_20"
+        android:paddingRight="@dimen/xdp_20">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/paster_rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

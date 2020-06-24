@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginRight="@dimen/xdp_10"
+        android:id="@+id/report_video_card"
+        app:cardElevation="@dimen/xdp_0"
+        android:layout_width="@dimen/xdp_75"
+        android:background="@color/strok"
+        android:layout_height="@dimen/xdp_75">
+        <ImageView
+            android:layout_width="@dimen/xdp_35"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/xdp_35"
+            android:src="@mipmap/report_picture"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/xdp_3"
+            android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/report_video_imgnum"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="@dimen/xdp_1"
+              android:textSize="@dimen/xsp_10"
+              android:textColor="@color/tintgrey"
+              android:text="0"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/xsp_10"
+              android:textColor="@color/tintgrey"
+              android:text="/3"
+              />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginRight="@dimen/xdp_10"
+        android:id="@+id/report_video_imgfarm"
+        android:visibility="visible"
+        app:cardElevation="@dimen/xdp_0"
+        android:layout_width="@dimen/xdp_75"
+        android:background="@color/strok"
+        android:layout_height="@dimen/xdp_75">
+        <ImageView
+            android:id="@+id/report_video_img"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:src="@mipmap/report_picture"
+            />
+        <FrameLayout
+            android:id="@+id/report_false"
+            android:layout_width="@dimen/xdp_20"
+            android:layout_gravity="right"
+            android:layout_height="@dimen/xdp_20">
+        <ImageView
+            android:layout_width="@dimen/xdp_15"
+            android:layout_height="@dimen/xdp_15"
+
+             android:layout_gravity="right"
+            android:src="@mipmap/report_false"
+            />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        layout="@layout/item_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:textColor="@color/black"
+        android:textSize="@dimen/xsp_11"
+        android:gravity="center"
+        android:text="为了您的账户安全，需要验证您的身份，将会发送一封验证邮箱至您所填邮箱请登录您的邮箱查收验证码"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/changep_tv"
+            android:layout_width="@dimen/xdp_60"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_31"
+            android:text="邮箱账号"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:hint="请输入邮箱账号"
+            android:id="@+id/changep_edp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:background="@null"
+            android:textSize="@dimen/xsp_13" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/xdp_60"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_31"
+            android:text="验证码     "
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/changep_edv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:maxLength="4"
+            android:textSize="@dimen/xsp_13" />
+
+        <TextView
+            android:id="@+id/changephone_getv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="@dimen/xdp_12"
+            android:text="获取验证码"
+            android:textColor="@color/Thme"
+            android:textSize="@dimen/xsp_15" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/changep_bt"
+        android:layout_width="@dimen/xdp_315"
+        android:layout_height="@dimen/xdp_40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/xdp_85"
+        android:background="@drawable/buttonred"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/xsp_13" />
+
+
+
+</LinearLayout>

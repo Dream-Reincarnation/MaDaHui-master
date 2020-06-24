@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/libsuperplayer/build/
+/libsuperplayer/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/

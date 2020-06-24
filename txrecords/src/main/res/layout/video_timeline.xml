@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/xdp_70"
+    android:layout_marginBottom="@dimen/xdp_100">
+
+    <com.example.txrecord.weight.times.VideoProgressView
+        android:id="@+id/video_progress_view"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/xdp_60"
+       />
+
+    <ImageView
+        android:id="@+id/iv_player_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/xdp_65"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/music_lines" />
+</RelativeLayout>

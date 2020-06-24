@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Thme">#f55056</color>
+    <color name="text">#CAC6C6</color>
+    <color name="home_red">#f55056</color>r
+    <color name="background">#f6f6f6</color>
+    <color name="yellow">#ffb600</color>
+    <color name="white">#ffffff</color>
+    <color name="white1">#fefefe</color>
+    <color name="mine_select">#212121</color>
+    <color name="mine_unselect">#888888</color>
+    <color name="green">#1FF17F</color>
+    <color name="grey1">#a8a8a8</color>
+    <color name="black">#212121</color>
+    <color name="blacks">#000000</color>
+    <color name="grey2">#f2f2f2</color>
+    <color name="grey">#888888</color>
+    <color name="dyna_back">#cf3857</color>
+    <color name="backg">#e7204f</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#f6b813</color>
+    <color name="red">#cf3857</color>
+    <color name="pay">#FFD7D8D9</color>
+    <color name="tintgrey">#9d9d9d</color>
+    <color name="translucent_white">#61ffffff</color>
+    <color name="colorbtmHs">#50000000</color>
+    <color name="colorgrey">#cccccc</color>
+    <color name="wechatgreen">#12AF09</color>
+    <color name="phoneloginbg">#E6E6E6</color>
+    <color name="progress">#666666</color>
+    <color name="videorelease">#EAEAEA</color>
+    <color name="jian">#5A5A57</color>
+    <color name="addshop_bg">#424242</color>
+
+
+
+
+
+
+
+
+
+
+
+    <color name="keyboardBackColor">#212121</color>
+    <color name="keyboardKeyBack">#474749</color>
+    <color name="darkGray">#A9A9A9</color>
+    <color name="lightGray">#D3D3D3</color>
+
+
+
+
+
+
+
+    <color name="strok">#EEEEEE</color>
+    <color name="bt_unsel">#FCA2A5</color>
+    <color name="keyboardNormal">#1c69ac</color>
+    <color name="keyboardDeep">#991c69ac</color>
+    <color name="keyboardPress">#1296db</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorred">#e00000</color>
+    <color name="purple">#a339ff</color>
+    <color name="blue">#03A9F4</color>
+    <color name="dialog_bg">#727e847e</color>
+    <color name="text_black_color">#404040</color>
+    <color name="text_gray_color">#6f6f6f</color>
+    <color name="blue_color">#0396ff</color>
+    <color name="music_bg">#1f1f22</color>
+</resources>

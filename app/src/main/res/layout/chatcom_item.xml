@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/xdp_7"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/xdp_92">
+
+     <RelativeLayout
+         android:id="@+id/chatcomm_rela"
+         android:layout_width="match_parent"
+         android:layout_marginLeft="@dimen/xdp_22"
+         android:layout_height="@dimen/xdp_74">
+         <ImageView
+            android:layout_centerVertical="true"
+             android:layout_width="@dimen/xdp_45"
+             android:layout_height="@dimen/xdp_45"
+             android:id="@+id/chatcomm_head"
+             />
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_toRightOf="@id/chatcomm_head"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="@dimen/xdp_12"
+             android:orientation="vertical"
+             >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/black"
+             android:textSize="@dimen/xsp_15"
+             android:text="用户名称"
+             android:maxLength="9"
+             android:singleLine="true"
+             android:ellipsize="end"
+             android:id="@+id/chatcomm_name"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:text="内容内容内容"
+             android:maxEms="10"
+             android:layout_marginTop="@dimen/xdp_8"
+             android:layout_height="wrap_content"
+             android:textColor="@color/tintgrey"
+             android:textSize="@dimen/xsp_13"
+
+             android:singleLine="true"
+             android:ellipsize="end"
+             android:id="@+id/chatcomm_text"
+             />
+         </LinearLayout>
+         <ImageView
+             android:id="@+id/chatcomm_video"
+             android:layout_width="@dimen/xdp_60"
+             android:layout_height="@dimen/xdp_60"
+             android:scaleType="centerCrop"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="@dimen/xdp_20"
+             />
+     </RelativeLayout>
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="@dimen/xdp_18"
+         android:orientation="horizontal"
+         android:layout_marginLeft="@dimen/xdp_22"
+         >
+         <TextView
+             android:id="@+id/chatcomm_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/xsp_10"
+             android:text="在发布作品时提到了你"
+             android:textColor="@color/colorgrey"
+             />
+     </LinearLayout>
+
+</LinearLayout>

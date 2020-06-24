@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/talk_lin"
+    android:layout_height="@dimen/xdp_60">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_60"
+        android:orientation="horizontal"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="@dimen/xdp_12"
+             app:cardElevation="@dimen/xdp_0"
+            app:cardCornerRadius="@dimen/xdp_5"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/xdp_45"
+            android:layout_height="@dimen/xdp_45"
+            android:id="@+id/talk_img"
+            android:src="@mipmap/newtopic"
+            />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+                                                android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/talk_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xdp_10"
+                android:layout_marginTop="@dimen/xdp_4"
+                android:text="#郑州收"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_15"
+                android:textStyle="bold" />
+           <TextView
+               android:id="@+id/talk_num"
+               android:layout_marginTop="@dimen/xdp_5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="5922人参与"
+               android:textSize="@dimen/xsp_13"
+               android:layout_marginLeft="@dimen/xdp_10"
+               android:textColor="@color/mine_unselect"
+               />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:background="@color/background"
+        />
+</LinearLayout>

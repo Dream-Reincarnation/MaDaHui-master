@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/transparent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="@dimen/xdp_150"
+        android:background="#80000000"
+        android:layout_height="@dimen/xdp_90"
+        >
+        <FrameLayout
+            android:id="@+id/upload_back"
+            android:layout_width="@dimen/xdp_20"
+            android:layout_alignParentRight="true"
+            android:layout_height="@dimen/xdp_20">
+        <ImageView
+            android:layout_marginTop="@dimen/xdp_5"
+            android:layout_marginRight="@dimen/xdp_6"
+            android:layout_gravity="right"
+            android:layout_width="@dimen/xdp_8"
+            android:layout_height="@dimen/xdp_8"
+            android:src="@mipmap/dyna_take_false"
+
+            />
+    </FrameLayout>
+       <FrameLayout
+           android:id="@+id/upload_fare"
+           android:layout_width="@dimen/xdp_40"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="@dimen/xdp_14"
+           android:layout_height="@dimen/xdp_40">
+
+           <com.ajiani.maidahui.weight.circle.CircularProgressView
+               android:id="@+id/upload_progress"
+               android:layout_width="match_parent"
+               app:backColor="@color/transparent"
+               android:layout_height="match_parent"
+
+               android:alpha="0.8"
+               app:progColor="@color/white" />
+
+           <TextView
+               android:id="@+id/upload_progress_text"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="100%"
+               android:textColor="@color/white"
+               android:textSize="@dimen/xsp_10" />
+       </FrameLayout>
+        <TextView
+            android:layout_below="@id/upload_fare"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload_txet"
+            android:textSize="@dimen/xsp_12"
+            android:layout_marginTop="@dimen/xdp_13"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+</LinearLayout>

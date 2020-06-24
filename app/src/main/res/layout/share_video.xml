@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/share_videolin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_0"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        ></LinearLayout>
+    <LinearLayout
+        android:id="@+id/share_video_toplin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circlewhitebg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/xdp_15"
+            android:text="私信给"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_14" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/share_video_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xdp_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xdp_30"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/share_video_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="分享到"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_14" />
+
+                <HorizontalScrollView
+                    android:id="@+id/share_video_horizon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xdp_10"
+
+
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/share_video_wechat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/xdp_25"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/xdp_45"
+                                android:layout_height="@dimen/xdp_45"
+                                android:src="@mipmap/share_wechat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="微信好友"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xsp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/share_video_wechatfriend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/xdp_15"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/xdp_45"
+                                android:layout_height="@dimen/xdp_45"
+                                android:src="@mipmap/share_friends" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="朋友圈"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xsp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/share_video_picture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/xdp_15"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/xdp_45"
+                                android:layout_height="@dimen/xdp_45"
+                                android:src="@mipmap/share_printshot" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="图片分享"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xsp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/share_video_space"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/xdp_15"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/xdp_45"
+                                android:layout_height="@dimen/xdp_45"
+                                android:src="@mipmap/share_qqspace" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="QQ空间"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xsp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/share_video_QQ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/xdp_15"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/xdp_45"
+                                android:layout_height="@dimen/xdp_45"
+                                android:src="@mipmap/share_qq" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="QQ"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xsp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/share_video_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/xdp_15"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/xdp_45"
+                                android:layout_height="@dimen/xdp_45"
+                                android:src="@mipmap/share_weibo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="微博"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xsp_12" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/share_video_commlin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/xdp_10"
+            android:padding="@dimen/xdp_4"
+            android:layout_marginTop="@dimen/xdp_8"
+            android:layout_marginRight="@dimen/xdp_10"
+            android:background="@drawable/verifty"
+            android:orientation="horizontal"
+
+            >
+
+            <EditText
+                android:id="@+id/share_video_et"
+                android:layout_width="@dimen/xdp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xdp_10"
+                android:layout_marginTop="@dimen/xdp_7"
+                android:layout_marginRight="@dimen/xdp_6"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入消息或直接发送"
+                android:textSize="@dimen/xsp_14" />
+
+            <com.ajiani.maidahui.weight.circle.RoundCornerImageView
+                android:id="@+id/share_video_thumb"
+                android:layout_width="@dimen/xdp_85"
+                android:layout_height="@dimen/xdp_85"
+                app:right_bottom_radius="@dimen/xdp_5"
+                app:right_top_radius="@dimen/xdp_5"
+                app:left_top_radius="@dimen/xdp_5"
+                app:left_bottom_radius="@dimen/xdp_5"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@mipmap/share_img" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/share_video_horizon2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingTop="@dimen/xdp_30"
+            android:scrollbars="none"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/share_video_stick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/share_stick"
+                        android:layout_width="@dimen/xdp_45"
+                        android:layout_height="@dimen/xdp_45"
+                        android:src="@mipmap/share_nostick" />
+                    <TextView
+                        android:id="@+id/share_tv_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="置顶"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_video_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/xdp_45"
+                        android:layout_height="@dimen/xdp_45"
+                        android:src="@mipmap/share_report" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="举报"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_video_savepic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/xdp_45"
+                        android:layout_height="@dimen/xdp_45"
+                        android:src="@mipmap/share_savepic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="保存至相册 "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_video_colloect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/share_video_star"
+                        android:layout_width="@dimen/xdp_45"
+                        android:layout_height="@dimen/xdp_45"
+                        android:src="@mipmap/share_nocollect" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收藏"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_video_harmony"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/xdp_45"
+                        android:layout_height="@dimen/xdp_45"
+                        android:src="@mipmap/share_harmony" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="合拍"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_video_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/xdp_45"
+                        android:layout_height="@dimen/xdp_45"
+                        android:src="@mipmap/share_nolink" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="复制链接"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_video_nolike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/xdp_45"
+                        android:layout_height="@dimen/xdp_45"
+                        android:src="@mipmap/share_nofeel" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不感兴趣"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_video_juridict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_15"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/xdp_45"
+                        android:layout_height="@dimen/xdp_45"
+                        android:src="@mipmap/share_jurisdict" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设置权限"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/xdp_20">
+
+        <TextView
+            android:id="@+id/share_video_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_50"
+            android:background="@color/background"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/share_video_send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_50"
+            android:background="@color/Thme"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xsp_15"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

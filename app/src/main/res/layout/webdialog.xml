@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/xdp_300"
+    app:cardCornerRadius="@dimen/xdp_9"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    app:cardElevation="0dp"
+    android:layout_height="@dimen/xdp_150">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示"
+            android:paddingLeft="@dimen/xdp_12"
+            android:paddingRight="@dimen/xsp_12"
+            android:layout_marginTop="@dimen/xdp_12"
+            android:textSize="@dimen/xsp_17"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center|top"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/xdp_52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/xdp_12"
+            android:paddingRight="@dimen/xsp_12"
+            android:layout_gravity="top|center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15"
+            android:text="下一个页面不受我们控制哦,使用时请注意安全"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_1"
+            android:layout_gravity="top"
+            android:background="@color/background"
+            android:layout_marginTop="@dimen/xdp_102"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/webdialog_dis"
+                android:layout_width="@dimen/xdp_0"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/xsp_17"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="@dimen/xdp_1"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+            />
+            <TextView
+                android:id="@+id/webdialog_go"
+                android:layout_width="@dimen/xdp_0"
+                android:layout_weight="1"
+                android:text="浏览器打开"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/xsp_17"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

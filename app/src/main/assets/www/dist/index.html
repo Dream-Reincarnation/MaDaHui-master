@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover"><title>麦达汇</title><link rel=stylesheet href=./static//css/safe-area-inset.css><link rel=stylesheet href=./static/fontFamily/font.css><link href=./static/css/app.ef59d1bd676fcbc157f78d1dae978d3a.css rel=stylesheet></head><style>#app {
+          color: #212121;
+     }
+     .van-dialog{
+          top: 50% !important;
+     }
+     body{
+          overflow: hidden;
+     }
+     .noscroll {
+          position: fixed;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+     }
+
+     .header_left {
+          width: 3rem;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+     }
+
+     .header_right {
+          width: 3rem;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+     }
+
+     .same_img {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+     }
+
+     /*左右布局*/
+     .left_right {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+     }
+
+     /*上下居中*/
+     .top_botom_center {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+     }
+     /*上下对齐*/
+     .top_bottom_between {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+     }
+     /*左右对齐*/
+     .left_right_between {
+          display: flex;
+          justify-content: space-between;
+     }
+     /*数字字体*/
+     .num_family{
+          font-family: 数字专用;
+     }
+     .zhanwei{
+          width: 100vw;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 100;
+          background-size: 100% 100%;
+     }</style><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.0d9269eff79e068c724b.js></script><script type=text/javascript src=./static/js/app.d2718e7ccc0c545883d8.js></script></body></html><script>window.onload = function () {
+          getRem(375, 10);
+     };
+     window.onresize = function () {
+          getRem(375, 10);
+     };
+
+     function getRem(pwidth, prem) {
+          var html = document.getElementsByTagName("html")[0];
+          var oWidth =
+              document.body.clientWidth || document.documentElement.clientWidth;
+          html.style.fontSize = (oWidth / pwidth) * prem + "px";
+     }</script>

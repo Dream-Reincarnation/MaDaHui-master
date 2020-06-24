@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44">
+        <FrameLayout
+            android:id="@+id/about_back"
+            android:layout_width="@dimen/xdp_40"
+            android:layout_height="@dimen/xdp_40">
+        <ImageView
+
+            android:layout_width="@dimen/xdp_22"
+            android:layout_height="@dimen/xdp_22"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:src="@mipmap/fanhui" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="关于我们"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17"
+            />
+    </FrameLayout>
+
+    <WebView
+        android:id="@+id/about_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/about_back"
+            android:layout_width="@dimen/xdp_13"
+            android:layout_height="@dimen/xdp_22"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/about_lin1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_40"
+        android:layout_marginTop="@dimen/xdp_10"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:text="版权信息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_13" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_2" />
+
+    <LinearLayout
+        android:id="@+id/about_lin2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_40"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:text="网络服务协议"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_13" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_2" />
+
+    <LinearLayout
+        android:id="@+id/about_lin3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_40"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:text="商户服务协议"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_13" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_2" />
+
+    <LinearLayout
+        android:id="@+id/about_lin4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_40"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:text="隐私保护说明"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_13" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_2" />
+
+    <LinearLayout
+        android:id="@+id/about_lin5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_40"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:text="证件信息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_13" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_2" />-->
+
+</LinearLayout>

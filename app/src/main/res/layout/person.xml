@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/pson_back"
+
+            android:layout_width="@dimen/xdp_40"
+            android:layout_height="@dimen/xdp_40">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_12"
+                android:layout_height="@dimen/xdp_22"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:src="@mipmap/fanhui" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="迪丽热巴"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/person_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID:12345"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_11" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pson_share"
+            android:layout_width="@dimen/xdp_22"
+            android:layout_height="@dimen/xdp_21"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="@dimen/xdp_256"
+            android:layout_marginRight="@dimen/xdp_12"
+            android:src="@mipmap/fenxiang" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:layout_marginTop="44dp"
+        android:background="@color/background" />
+
+    <com.ajiani.maidahui.weight.mine.ScaleScrollView
+        android:id="@+id/person_sroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/person_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xdp_20"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/pson_head"
+                        android:layout_width="@dimen/xdp_80"
+                        android:layout_height="@dimen/xdp_80"
+                        android:layout_marginLeft="@dimen/xdp_12"
+                        android:src="@mipmap/photo" />
+
+                    <LinearLayout
+                        android:id="@+id/pson_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/xdp_15"
+                        android:layout_toRightOf="@id/pson_head"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/pson_lin3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/pson_guannum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLength="5"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xsp_16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/xdp_2"
+                                android:text="关注"
+                                android:textColor="@color/mine_unselect"
+                                android:textSize="@dimen/xsp_13" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pson_lin2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/pson_fennum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLength="5"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xsp_16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/xdp_2"
+                                android:text="粉丝"
+                                android:textColor="@color/mine_unselect"
+                                android:textSize="@dimen/xsp_13" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pson_lin1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/pson_goodnum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLength="5"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xsp_16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/xdp_2"
+                                android:maxLength="5"
+                                android:text="获赞"
+                                android:textColor="@color/mine_unselect"
+                                android:textSize="@dimen/xsp_13"
+
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/pson_guan"
+                        android:visibility="visible"
+                        android:layout_width="@dimen/xdp_160"
+                        android:layout_height="@dimen/xdp_30"
+                        android:layout_below="@id/pson_lin"
+                        android:layout_marginLeft="@dimen/xdp_15"
+                        android:layout_marginTop="@dimen/xdp_10"
+                        android:layout_toRightOf="@id/pson_head"
+                        android:background="@drawable/dyna_follow"
+                        android:gravity="center"
+                        android:text="关注"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/pson_chat"
+                        android:layout_width="@dimen/xdp_70"
+                        android:layout_height="@dimen/xdp_30"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/pson_lin"
+                        android:layout_marginRight="@dimen/xdp_12"
+                        android:layout_marginTop="@dimen/xdp_10"
+
+                        android:background="@drawable/dyna_unfollow"
+                        android:gravity="center"
+                        android:text="私信"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/pson_chat2"
+                        android:layout_width="@dimen/xdp_200"
+                        android:layout_height="@dimen/xdp_30"
+                        android:layout_below="@id/pson_lin"
+                        android:layout_marginLeft="@dimen/xdp_15"
+                        android:layout_marginTop="@dimen/xdp_10"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@id/pson_head"
+                        android:background="@drawable/dyna_unfollow"
+                        android:gravity="center"
+                        android:textSize="@dimen/xsp_15"
+                        android:text="发私信"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_below="@id/pson_lin"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/xdp_12"
+                        android:layout_marginTop="@dimen/xdp_10"
+                        android:id="@+id/pson_unatten"
+                        android:layout_width="@dimen/xdp_30"
+                        android:visibility="gone"
+                        android:layout_height="@dimen/xdp_30"
+                        android:src="@mipmap/un_attention"
+                        />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_12"
+
+                    android:layout_marginTop="@dimen/xdp_14"
+                    android:src="@mipmap/musicer" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_12"
+                    android:layout_marginTop="@dimen/xdp_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pson_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/xdp_5"
+                        android:text="女"
+                        android:textColor="@color/mine_unselect"
+                        android:textSize="@dimen/xsp_11" />
+
+                    <TextView
+                        android:layout_width="@dimen/xdp_1"
+                        android:layout_height="@dimen/xdp_11"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/xdp_6"
+                        android:background="@color/background" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/xdp_5"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pson_eare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/mine_unselect"
+                            android:textSize="@dimen/xsp_11" />
+
+                        <TextView
+                            android:id="@+id/pson_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/xdp_8"
+                            android:text="郑"
+                            android:textColor="@color/mine_unselect"
+                            android:textSize="@dimen/xsp_11" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/xdp_1"
+                        android:layout_height="@dimen/xdp_11"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/xdp_2"
+                        android:background="@color/background" />
+
+                    <ImageView
+                        android:id="@+id/pson_location"
+                        android:layout_width="@dimen/xdp_12"
+                        android:layout_height="@dimen/xdp_15"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/xdp_18"
+                        android:src="@mipmap/location" />
+
+                    <TextView
+                        android:id="@+id/pson_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/xdp_4"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:text="2.7km" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/qianm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_12"
+                    android:layout_marginTop="@dimen/xdp_9"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_13" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/xdp_15"
+                    android:layout_marginTop="@dimen/xdp_20"
+                    android:background="@color/grey2" />
+                <RelativeLayout
+                android:id="@+id/rela_zuo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/pson_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_12"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    app:tabBackground="@color/transparent"
+                    app:tabIndicatorColor="@color/transparent"
+                    app:tabMode="fixed"
+                    app:tabRippleColor="@color/transparent"
+                    app:tabTextColor="@color/black" />
+            </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_1"
+                android:background="@color/background" />
+
+            <com.ajiani.maidahui.weight.mine.MyMinePager
+                android:id="@+id/pson_vp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.ajiani.maidahui.weight.mine.ScaleScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rela_prttop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/pson_tabtop"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:layout_marginRight="@dimen/xdp_12"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/transparent"
+            app:tabIndicatorColor="@color/transparent"
+            app:tabMode="fixed"
+            app:tabRippleColor="@color/transparent"
+            app:tabTextColor="@color/black" />
+    </RelativeLayout>
+
+</FrameLayout>

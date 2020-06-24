@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DoubleHeadedDragonBar">
+        <!--进度条按钮宽高-->
+        <attr name="button_width" format="dimension" />
+        <attr name="button_height" format="dimension" />
+        <!--进图条按钮图片-->
+        <attr name="button_img" format="reference"/>
+        <!--单位字体颜色-->
+        <attr name="text_color" format="color"/>
+        <!--进图条背景颜色-->
+        <attr name="bg_color" format="color"/>
+        <!--进度条颜色-->
+        <attr name="value_color" format="color"/>
+        <!--进度条宽-->
+        <attr name="seek_height" format="dimension"/>
+    </declare-styleable>
+
+
+
+
+
+    <!--简单环形进度-->
+    <declare-styleable name="SimpleRoundProgress">
+        <!--圆环颜色-->
+        <attr name="srp_roundColor" format="color" />
+        <!--圆环的宽度-->
+        <attr name="srp_roundWidth" format="dimension" />
+        <!--圆环上的进度颜色-->
+        <attr name="srp_progressColor" format="color" />
+        <!--圆环上的进度宽度-->
+        <attr name="srp_progressWidth" format="dimension" />
+        <!--进度值的最大值，一般为100-->
+        <attr name="srp_max" format="integer" />
+        <!--开始角度，指定进度初始点的绘制位置-->
+        <attr name="srp_startAngle" format="integer" />
+        <!--样式，空心还是实心-->
+        <attr name="srp_style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="flow" format="boolean"/>
+        <attr name="childSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+        </attr>
+        <attr name="childSpacingForLastRow" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+            <enum name="align" value="-65537"/>
+        </attr>
+        <attr name="rowSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+        </attr>
+        <attr name="rtl" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundCornerImageView">
+
+        <attr name="left_top_radius" format="dimension" />
+        <attr name="right_top_radius" format="dimension" />
+        <attr name="right_bottom_radius" format="dimension" />
+        <attr name="left_bottom_radius" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="backWidth" format="dimension" />    <!--背景圆环宽度-->
+        <attr name="progWidth" format="dimension" />    <!--进度圆环宽度-->
+        <attr name="backColor" format="color" />        <!--背景圆环颜色-->
+        <attr name="progColor" format="color" />        <!--进度圆环颜色-->
+        <attr name="progStartColor" format="color" />   <!--进度圆环开始颜色-->
+        <attr name="progFirstColor" format="color" />   <!--进度圆环结束颜色-->
+        <attr name="progress" format="integer" />       <!--圆环进度-->
+    </declare-styleable>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer" />
+        <attr name="progress_max" format="integer" />
+
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+
+        <attr name="progress_text_offset" format="dimension" />
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RangeSlider">
+        <attr name="lineHeight" format="dimension" />
+        <attr name="thumbWidth" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="maskColor" format="color" />
+        <attr name="tickCount" format="integer" />
+        <attr name="leftThumbIndex" format="integer" />
+        <attr name="rightThumbIndex" format="integer" />
+        <attr name="leftThumbDrawable" format="reference" />
+        <attr name="rightThumbDrawable" format="reference" />
+        <attr name="midThumbDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorView">
+        <attr name="indicatorColor" format="color"/>
+        <attr name="indicatorColorSelected" format="color"/>
+        <attr name="indicatorWidth" format="integer"/>
+        <attr name="gravity" format="integer"/>
+    </declare-styleable>
+    <!--聊天页面 发送按钮-->
+    <declare-styleable name="StateButton">
+
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference"/>
+        <attr name="pressedTextColor" format="color|reference"/>
+        <attr name="unableTextColor" format="color|reference"/>
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference"/>
+        <attr name="strokeDashGap" format="dimension|reference"/>
+        <attr name="normalStrokeWidth" format="dimension|reference"/>
+        <attr name="pressedStrokeWidth" format="dimension|reference"/>
+        <attr name="unableStrokeWidth" format="dimension|reference"/>
+        <attr name="normalStrokeColor" format="color|reference"/>
+        <attr name="pressedStrokeColor" format="color|reference"/>
+        <attr name="unableStrokeColor" format="color|reference"/>
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference"/>
+        <attr name="pressedBackgroundColor" format="color|reference"/>
+        <attr name="unableBackgroundColor" format="color|reference"/>
+
+        <!--background radius-->
+        <attr name="radius" format="dimension|reference"/>
+        <attr name="round" format="boolean|reference"/>
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="SafeKeyboardView">
+        <attr name="random_digit" format="boolean" />                   <!-- 数字随机显示 -->
+        <attr name="remember_last_type" format="boolean" />             <!-- 记住上次键盘输入类型 -->
+    </declare-styleable>
+    <!-- 通讯录-->
+    <declare-styleable name="CharIndexView">
+        <!-- 	banner背影色  	 -->
+        <!-- 索引字大小 -->
+        <attr name="indexTextSize" format="dimension"/>
+        <!-- 字颜色 -->
+        <attr name="charTextColor" format="color"/>
+        <!-- 索引字颜色 -->
+        <attr name="indexTextColor" format="color"/>
+    </declare-styleable>
+
+    <!--注意这里的name要和自定义View的名称一致，不然在xml布局中无法引用-->
+  <!--  <declare-styleable name="CircleProgressBar">
+        &lt;!&ndash;文字大小&ndash;&gt;
+        <attr name="text_size" format="dimension"/>
+        &lt;!&ndash;文字颜色&ndash;&gt;
+        <attr name="text_color" format="color"/>
+        &lt;!&ndash;文本&ndash;&gt;
+        <attr name="text" format="string"/>
+        &lt;!&ndash;变宽宽度&ndash;&gt;
+        <attr name="stroke_width" format="integer"/>
+        &lt;!&ndash;未走的进度的颜色&ndash;&gt;
+        <attr name="normal_color" format="color"/>
+        &lt;!&ndash;已走的进度的颜色&ndash;&gt;
+        <attr name="progress_color" format="color"/>
+        &lt;!&ndash;已走的进度 0-360 &ndash;&gt;
+        <attr name="progress" format="integer"/>
+        &lt;!&ndash;类型 填充型，还是环形&ndash;&gt;
+        <attr name="progress_style" format="enum">
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
+        </attr>
+    </declare-styleable>-->
+    <!--<declare-styleable name="myRoundProgress">
+        <attr name="myRoundColor" format="color" />
+        <attr name="myRoundProgressColor" format="color" />
+        <attr name="myRoundWidth" format="dimension" />
+        <attr name="myRoundTextSize" format="dimension" />
+    </declare-styleable>-->
+
+
+    <declare-styleable name="BubbleView">
+        <attr name="arrowWidth" format="dimension" />
+        <attr name="angle" format="dimension" />
+        <attr name="arrowHeight" format="dimension" />
+        <attr name="arrowPosition" format="dimension" />
+        <attr name="bubbleColor" format="color" />
+        <attr name="arrowLocation" format="enum">
+            <enum name="left" value="0x00" />
+            <enum name="right" value="0x01" />
+            <enum name="top" value="0x02" />
+            <enum name="bottom" value="0x03" />
+        </attr>
+    </declare-styleable>
+</resources>

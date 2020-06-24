@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="@dimen/xdp_135">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂不支持照片视频混选"
+        android:textColor="#888888"
+        android:textSize="@dimen/xdp_12"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_21"
+        />
+
+    <TextView
+        android:id="@+id/picvideo_next"
+        android:layout_marginTop="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_width="@dimen/xdp_85"
+        android:layout_height="@dimen/xdp_30"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/buttonred"
+        android:gravity="center"
+        android:textSize="@dimen/xsp_15"
+        android:textColor="#ffffff"
+        android:text="下一步"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/picvideos_rel"
+        android:layout_marginTop="@dimen/xdp_12"
+        android:layout_below="@id/picvideo_next"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_marginLeft="@dimen/xdp_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/xdp_16"
+        />
+
+</RelativeLayout>

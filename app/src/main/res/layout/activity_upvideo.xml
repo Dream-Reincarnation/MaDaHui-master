@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <VideoView
+        android:id="@+id/upvideo_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/upvideo_back"
+            android:layout_width="@dimen/xdp_13"
+            android:layout_height="@dimen/xdp_22"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:src="@mipmap/fanhui" />
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:text="发布动态"
+             android:textSize="@dimen/xsp_17"
+             android:layout_gravity="center"
+             android:gravity="center"
+             />
+        <TextView
+            android:id="@+id/upvideo_next"
+            android:layout_width="@dimen/xdp_60"
+            android:layout_height="@dimen/xdp_29"
+            android:layout_gravity="right|center"
+
+            android:background="@drawable/theml"
+            android:gravity="center"
+            android:text="下一步"
+            android:layout_marginRight="@dimen/xdp_12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xsp_15" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/xdp_70"
+         android:id="@+id/upvideo_rel"
+         android:visibility="gone"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_49"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/upvideo_textlin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_22"
+                android:layout_height="@dimen/xdp_22"
+                android:src="@mipmap/wenzi"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xdp_2"
+                android:text="字幕"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upvideo_yinlin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_22"
+                android:layout_height="@dimen/xdp_22"
+                android:src="@mipmap/xianxing"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xdp_2"
+                android:text="音量"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upvideo_addlin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_22"
+                android:layout_height="@dimen/xdp_22"
+                android:src="@mipmap/addshang"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xdp_2"
+                android:text="添加商品"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upvideo_jianlin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_22"
+                android:layout_height="@dimen/xdp_22"
+                android:src="@mipmap/xianxing"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xdp_2"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upvideo_musiclin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_22"
+                android:layout_height="@dimen/xdp_22"
+                android:src="@mipmap/yinle"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xdp_2"
+                android:text="音乐"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_11" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

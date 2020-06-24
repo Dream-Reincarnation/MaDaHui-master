@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:id="@+id/chatnews_back"
+            android:layout_width="@dimen/xdp_44"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_width="@dimen/xdp_13"
+                android:layout_height="@dimen/xdp_22"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:src="@mipmap/fanhui" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="互动"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17" />
+    </FrameLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/chatnews_smart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatnews_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/xdp_21"
+            android:paddingTop="@dimen/xdp_10"
+            android:paddingRight="@dimen/xdp_16"
+            android:paddingBottom="@dimen/xdp_22" />
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_110"
+        android:orientation="vertical">
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/vlogs_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_20"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/xdp_44"
+            android:layout_marginTop="@dimen/xdp_15"
+            android:layout_marginRight="@dimen/xdp_51"
+
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_bounce_enable="false"
+            tl:tl_indicator_color="@color/home_red"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="@color/white"
+            tl:tl_textUnselectColor="@color/black"
+
+            tl:tl_textsize="@dimen/xsp_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/xdp_17"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vlogs_ordernum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="--"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vlogs_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vlogs_ordernum"
+                        android:text="订单数"
+                        android:textColor="@color/mine_unselect"
+                        android:textSize="@dimen/xsp_12"
+                        android:textStyle="bold"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/vlogs_unyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vlogs_order"
+                        android:text="较前一日"
+                        android:textColor="@color/mine_unselect"
+                        android:textSize="@dimen/xsp_12"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/vlogs_unimg"
+                    android:layout_width="@dimen/xdp_6"
+                    android:layout_height="@dimen/xdp_8"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/xdp_26"
+                    android:src="@mipmap/down"
+                    android:layout_marginBottom="@dimen/xdp_3"
+                     />
+
+                <TextView
+                    android:id="@+id/vlogs_ordernums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vlogs_order"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    android:text="10"
+                    android:textSize="@dimen/xsp_10" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vlogs_earningsnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="--"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_20"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vlogs_ordernum"
+                        android:text="收益"
+                        android:textColor="@color/mine_unselect"
+                        android:textSize="@dimen/xsp_12"
+                        android:textStyle="bold"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vlogs_order"
+                        android:text="较前一日"
+                        android:textColor="@color/mine_unselect"
+                        android:textSize="@dimen/xsp_12"
+                        android:textStyle="bold" />
+                    <!--  <ImageView
+
+                          android:id="@+id/vlogs_unimg"
+                          android:layout_width="@dimen/xdp_6"
+                          android:layout_alignParentBottom="true"
+                          android:layout_height="@dimen/xdp_8"
+                          android:layout_below="@id/vlogs_order"
+                          android:layout_toRightOf="@id/vlogs_unimg"
+                          android:src="@mipmap/photo"
+                          />
+                       <TextView
+                           android:layout_toRightOf="@id/vlogs_unimg"
+                           android:layout_width="wrap_content"
+                           android:layout_below="@id/vlogs_order"
+                           android:layout_height="wrap_content"
+                           android:text="10"
+
+
+                           />-->
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/vlogs_voteimg"
+                    android:layout_width="@dimen/xdp_6"
+                    android:layout_height="@dimen/xdp_8"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/xdp_26"
+                    android:src="@mipmap/down"
+                    android:layout_marginBottom="@dimen/xdp_3"
+                    />
+                <TextView
+                    android:id="@+id/vlogs_votes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vlogs_order"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    android:text="10"
+                    android:textSize="@dimen/xsp_10" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vlogs_earnings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="--"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vlogs_mai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vlogs_ordernum"
+                        android:text="销售额"
+                        android:textColor="@color/mine_unselect"
+                        android:textSize="@dimen/xsp_12"
+                        android:textStyle="bold"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vlogs_order"
+                        android:text="较前一月"
+                        android:textColor="@color/mine_unselect"
+                        android:textSize="@dimen/xsp_12"
+                        android:textStyle="bold" />
+                    <!--  <ImageView
+
+                          android:id="@+id/vlogs_unimg"
+                          android:layout_width="@dimen/xdp_6"
+                          android:layout_alignParentBottom="true"
+                          android:layout_height="@dimen/xdp_8"
+                          android:layout_below="@id/vlogs_order"
+                          android:layout_toRightOf="@id/vlogs_unimg"
+                          android:src="@mipmap/photo"
+                          />
+                       <TextView
+                           android:layout_toRightOf="@id/vlogs_unimg"
+                           android:layout_width="wrap_content"
+                           android:layout_below="@id/vlogs_order"
+                           android:layout_height="wrap_content"
+                           android:text="10"
+
+
+                           />-->
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/vlogs_maiimg"
+                    android:layout_width="@dimen/xdp_6"
+                    android:layout_height="@dimen/xdp_8"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/xdp_26"
+                    android:src="@mipmap/down"
+                    android:layout_marginBottom="@dimen/xdp_3"
+                    />
+                <TextView
+                    android:id="@+id/vlogs_xiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vlogs_order"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    android:text="10"
+                    android:textSize="@dimen/xsp_10" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vlogs_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xdp_10"
+
+        />
+</LinearLayout>

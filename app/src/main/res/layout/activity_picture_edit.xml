@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent">
+
+
+
+    <com.ajiani.maidahui.weight.MyViewPager
+        android:id="@+id/picture_editer_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <FrameLayout
+        android:layout_marginTop="@dimen/xdp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/picture_editer_back"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:layout_gravity="bottom"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_height="@dimen/xdp_30">
+            <ImageView
+                android:layout_width="@dimen/xdp_12"
+                android:layout_height="@dimen/xdp_20"
+                android:src="@mipmap/fanhui3"
+                />
+        </FrameLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/picture_editer_tab"
+            app:tabTextColor="@color/white"
+            app:tabIndicatorFullWidth="false"
+            android:layout_marginLeft="@dimen/xdp_80"
+            app:tabIndicatorColor="@color/white"
+            android:layout_width="wrap_content"
+            app:tabMode="scrollable"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/videoinfolin"
+
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="@dimen/xdp_48"
+        android:layout_height="@dimen/xdp_48"
+        android:id="@+id/videoinfo_img"
+        android:layout_marginTop="@dimen/xdp_10"
+        android:layout_marginLeft="@dimen/xdp_12"
+       />
+
+<!--    <ImageView
+         android:layout_marginTop="@dimen/xdp_10"
+         android:layout_width="@dimen/xdp_48"
+         android:layout_height="@dimen/xdp_48"
+         android:id="@+id/videoinfo_img"
+         android:layout_gravity="center"
+         android:layout_marginLeft="@dimen/xdp_12"
+         />-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/xdp_10"
+       android:layout_marginLeft="@dimen/xdp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|left"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="@dimen/xdp_80"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/videoinfo_text"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="top"
+
+        android:textSize="@dimen/xsp_13"
+
+        android:textColor="@color/white"
+        />
+
+        <TextView
+            android:id="@+id/videoinfo_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:textColor="@color/Thme"
+            android:textSize="@dimen/xsp_11"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/videoinfo_gobuy"
+        android:layout_width="@dimen/xdp_43"
+        android:layout_height="@dimen/xdp_18"
+        android:layout_gravity="bottom"
+        android:background="@drawable/videoshop_buy"
+        android:text="去购买"
+        android:gravity="center"
+        android:textSize="@dimen/xsp_10"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

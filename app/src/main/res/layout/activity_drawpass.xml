@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_40">
+        <FrameLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/xdp_40"
+            android:layout_height="@dimen/xdp_40">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:src="@mipmap/fanhui"
+                android:layout_gravity="center|left"
+                />
+
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现记录"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="@dimen/xsp_17"
+            />
+
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/draw_rel"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

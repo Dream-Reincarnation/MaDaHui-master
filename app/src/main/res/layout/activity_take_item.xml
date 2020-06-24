@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/circlebg"
+    android:layout_height="@dimen/xdp_130">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剪切配乐"
+        android:layout_marginTop="@dimen/xdp_18"
+        android:layout_marginLeft="@dimen/xdp_30"
+        android:textSize="@dimen/xsp_10"
+        android:textColor="@color/white"
+        />
+    <SeekBar
+        android:layout_marginTop="@dimen/xdp_13"
+        android:id="@+id/micvolume"
+        android:layout_marginLeft="@dimen/xdp_17"
+        android:layout_gravity="center"
+        android:maxHeight="@dimen/xdp_2"
+        android:max="100"
+        android:indeterminate="false"
+        android:progress="0"
+        android:thumb="@drawable/seek_thumb"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/xdp_19"
+        android:layout_height="@dimen/xdp_12"
+        android:progressDrawable="@drawable/seek_bg"
+
+        />
+    <TextView
+        android:id="@+id/take_music_time"
+        android:layout_marginTop="@dimen/xdp_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/xsp_10"
+        android:textColor="@color/white"
+        android:text="00:00"
+        android:layout_marginLeft="@dimen/xdp_17"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/xdp_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:background="@mipmap/addshop_bg"
+        />
+    <LinearLayout
+        android:layout_marginBottom="@dimen/xdp_10"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="@dimen/xdp_50"
+        android:paddingLeft="@dimen/xdp_26"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <FrameLayout
+            android:id="@+id/dyna_take_back"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/xdp_30">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_16"
+
+                android:layout_height="match_parent"
+                android:src="@mipmap/dyna_take_false" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="@dimen/xsp_17"
+                android:text="拖动进度条剪取音乐"
+                />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/dyna_take_true"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/xdp_26"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_16"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/dyna_take_right" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

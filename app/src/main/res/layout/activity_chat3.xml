@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+           <com.scwang.smartrefresh.layout.SmartRefreshLayout
+               android:id="@+id/smart"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d9d9d9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_50"
+            android:background="#f3f3f3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:id="@+id/ivAudio"
+                android:layout_width="@dimen/xdp_30"
+                android:layout_height="@dimen/xdp_30"
+                android:layout_margin="10px"
+                android:src="@mipmap/tab_ico_voice" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/xdp_8"
+                android:paddingTop="@dimen/xdp_6"
+                android:paddingRight="@dimen/xdp_8"
+                android:paddingBottom="@dimen/xdp_6">
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/grey"
+                    android:maxLines="3"
+                    android:minHeight="36dp"
+                    android:paddingLeft="13dp"
+                    android:textSize="11dp" />
+
+                <com.ajiani.maidahui.weight.chat.RecordButton
+                    android:id="@+id/btnAudio"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_session_btn_voice"
+                    android:text="按住说话"
+                    android:textSize="@dimen/xdp_13"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivEmo"
+                android:layout_width="@dimen/xdp_30"
+                android:layout_height="@dimen/xdp_30"
+                android:layout_margin="10px"
+                android:src="@mipmap/tab_ico_expression" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="14px"
+                android:src="@mipmap/tab_ico_open" />
+
+            <com.ajiani.maidahui.weight.chat.StateButton
+                android:id="@+id/btn_send"
+                android:layout_width="@dimen/xdp_50"
+                android:layout_height="@dimen/xdp_30"
+                android:padding="@dimen/xdp_1"
+                android:layout_marginRight="@dimen/xdp_10"
+                android:text="发送"
+                android:textSize="@dimen/xdp_13"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:normalBackgroundColor="#127CD6"
+                app:pressedBackgroundColor="#0f519b"
+                app:radius="@dimen/xdp_5" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d9d9d9" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <!--表情-->
+        <include
+            android:id="@+id/rlEmotion"
+            layout="@layout/include_emoji_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/llAdd"
+            layout="@layout/include_add_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

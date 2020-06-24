@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#999999"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/xdp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xdp_10"
+            android:layout_marginTop="@dimen/xdp_10"
+            android:layout_marginRight="@dimen/xdp_10"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/chat_item_header"
+                android:layout_width="@dimen/xdp_35"
+                android:layout_height="@dimen/xdp_35"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:layout_marginRight="@dimen/xdp_12"
+                android:scaleType="centerInside" />
+            <TextView
+                android:id="@+id/chat_receiver_name"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/xdp_10"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="昵称"
+                android:layout_toRightOf="@id/chat_item_header"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_12" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/xdp_6"
+                android:id="@+id/chat_item_layout_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/chat_receiver_name"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/chat_item_header"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/xdp_11">
+
+
+                <LinearLayout
+                    android:id="@+id/chatitem_offerlin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/xdp_70"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/chatitem_shopimg"
+                        android:layout_width="@dimen/xdp_44"
+                        android:layout_height="@dimen/xdp_44"
+                        android:layout_marginLeft="@dimen/xdp_5"
+                        android:layout_marginTop="@dimen/xdp_5"
+                        android:src="@mipmap/photo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/xdp_5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shops_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/xdp_10"
+                            android:text="订单报价已生成,请付款" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xdp_9"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/shops_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300.00"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:id="@+id/shops_tx"
+                        android:layout_width="@dimen/xdp_70"
+                        android:layout_height="@dimen/xdp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/xdp_5"
+                        android:layout_marginRight="@dimen/xdp_7"
+                        android:background="@drawable/theml"
+                        android:gravity="center"
+                        android:text="立即付款"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/chat_fram_check"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/xdp_10">
+
+            <ImageView
+                android:id="@+id/chat_img"
+                android:layout_width="@dimen/xdp_20"
+                android:layout_height="@dimen/xdp_20"
+                android:layout_gravity="center"
+                android:src="@mipmap/unsel" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/chat_lins"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="聊天"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17" />
+
+        <TextView
+            android:id="@+id/sendChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/xdp_12"
+            android:visibility="gone"
+            android:text="发起聊天"
+            android:textSize="@dimen/xsp_13" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_2"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_84"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/xdp_12"
+        android:paddingRight="@dimen/xdp_12">
+
+        <LinearLayout
+            android:id="@+id/chat_logistics"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_40"
+                android:layout_height="@dimen/xdp_40"
+                android:src="@mipmap/fans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xdp_15" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/chat_fans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_40"
+                android:layout_height="@dimen/xdp_40"
+                android:src="@mipmap/fans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="喜欢"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xdp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_star"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_40"
+                android:layout_height="@dimen/xdp_40"
+                android:src="@mipmap/mail_ico_remind" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务提醒"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xdp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_40"
+                android:layout_height="@dimen/xdp_40"
+                android:src="@mipmap/comment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@我"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xdp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_interact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_40"
+                android:layout_height="@dimen/xdp_40"
+                android:src="@mipmap/interact" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xdp_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_10" />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/chat_notifation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_60"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/xdp_12">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/xdp_25"
+
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="消息助手"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19/08/19"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/xsp_15"
+                    android:textColor="@color/mine_unselect"
+                    />
+                <TextView
+                    android:id="@+id/chat_top"
+                    android:layout_marginTop="@dimen/xdp_4"
+                    android:layout_width="@dimen/xdp_18"
+                    android:layout_height="@dimen/xdp_4"
+                    android:background="@color/purple"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/xdp_25"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="一枝独秀穿墙来"
+                    android:layout_gravity="center"
+                    android:textColor="@color/mine_unselect"
+                    android:textSize="@dimen/xsp_15" />
+                <TextView
+                    android:id="@+id/chat_nomsg"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    android:layout_width="@dimen/xdp_18"
+                    android:layout_height="@dimen/xdp_18"
+                    android:background="@drawable/green1circle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+   <!-- <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/logistics_smart"
+        android:visibility="visible"
+        android:layout_height="match_parent">-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+<!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+</LinearLayout>

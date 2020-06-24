@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+
+        android:orientation="horizontal">
+      <FrameLayout
+          android:id="@+id/rellase_back"
+          android:layout_width="@dimen/xdp_30"
+          android:layout_height="match_parent">
+
+          <ImageView
+
+              android:layout_width="wrap_content"
+              android:layout_gravity="left|center"
+              android:layout_height="@dimen/xdp_17"
+             android:layout_marginLeft="@dimen/xdp_12"
+              android:src="@mipmap/fanhui" />
+      </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/release_rele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/release_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--<EditText
+        android:id="@+id/release_title"
+        android:layout_marginLeft="@dimen/xdp_13"
+        android:layout_marginTop="@dimen/xdp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输入标题"
+        android:background="@null"
+        android:textColor="@color/mine_unselect"
+        android:textSize="@dimen/xsp_15"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/xdp_10"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_height="@dimen/xdp_1"
+        android:background="@mipmap/unselchat"
+        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_120"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_10">
+
+        <EditText
+            android:maxLength="60"
+            android:id="@+id/release_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="添加正文"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/release_title"
+            android:layout_width="@dimen/xdp_80"
+            android:layout_height="wrap_content"
+            android:background="@drawable/searchcircle"
+            android:gravity="center"
+            android:text="#添加标题"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_12" />
+
+        <TextView
+            android:id="@+id/friends"
+            android:layout_width="@dimen/xdp_80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:background="@drawable/searchcircle"
+            android:gravity="center"
+            android:text="@好友"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_12" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_10"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:background="@color/mine_unselect" />
+
+    <LinearLayout
+        android:id="@+id/release_lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_14"
+        android:layout_marginTop="@dimen/xdp_15"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/xdp_18"
+            android:layout_height="@dimen/xdp_22"
+            android:src="@mipmap/location" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xdp_14"
+            android:layout_weight="1"
+            android:text="添加位置"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/release_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/xdp_12"
+
+            />
+
+        <ImageView
+            android:layout_width="@dimen/xdp_10"
+            android:layout_height="@dimen/xdp_17"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/xdp_12"
+            android:src="@mipmap/goo" />
+    </LinearLayout>
+
+    <TextView
+        android:paddingTop="@dimen/xdp_44"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_10"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:background="@color/mine_unselect" />
+
+    <LinearLayout
+        android:id="@+id/release_lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_14"
+        android:layout_marginTop="@dimen/xdp_15"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/xdp_18"
+            android:layout_height="@dimen/xdp_22"
+            android:src="@mipmap/buoumaotubiao" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xdp_14"
+            android:layout_weight="1"
+            android:text="谁可以看"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/release_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/xdp_12"
+            android:text="公开" />
+
+        <ImageView
+            android:layout_width="@dimen/xdp_10"
+            android:layout_height="@dimen/xdp_17"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/xdp_12"
+            android:src="@mipmap/goo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_50"
+
+        android:layout_marginTop="@dimen/xdp_166"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/release_savelin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/xdp_39"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="@dimen/xdp_30"
+                android:layout_height="@dimen/xdp_30"
+                android:layout_gravity="center"
+                android:src="@mipmap/caogao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="存草稿" />
+        </LinearLayout>
+
+        <Button
+            android:layout_marginLeft="@dimen/xdp_19"
+            android:id="@+id/release_btsend"
+            android:layout_width="@dimen/xdp_220"
+            android:layout_height="@dimen/xdp_45"
+            android:background="@drawable/theml"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xsp_17"
+            />
+
+    </LinearLayout>
+</LinearLayout>

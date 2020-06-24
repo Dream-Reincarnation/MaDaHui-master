@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/xdp_73"
+    android:background="@color/background"
+    android:layout_marginLeft="@dimen/xdp_12"
+   android:gravity="center"
+    android:layout_height="@dimen/xdp_73">
+    <TextView
+        android:id="@+id/send_muiscname"
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="音乐名称"
+        android:textSize="@dimen/xsp_11"
+        />
+
+</LinearLayout>

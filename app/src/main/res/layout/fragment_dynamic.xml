@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dyna_lins"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_80"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xdp_8"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="动态"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_17" />
+
+            <ImageView
+                android:id="@+id/dyna_search"
+                android:layout_width="@dimen/xdp_17"
+                android:layout_height="@dimen/xdp_17"
+                android:layout_marginTop="@dimen/xdp_8"
+                android:layout_marginRight="@dimen/xdp_17"
+                android:src="@mipmap/search" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            
+        <ImageView
+            android:id="@+id/ic_search"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/xdp_13"
+            android:layout_marginLeft="@dimen/xdp_13"
+            android:layout_width="@dimen/xdp_17"
+            android:layout_height="@dimen/xdp_17"
+            android:src="@mipmap/nav_icon_search"
+            />
+        
+        
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/dyna_tab"
+            android:layout_width="@dimen/xdp_120"
+            android:layout_height="@dimen/xdp_44"
+            android:layout_marginLeft="@dimen/xdp_115"
+            android:layout_gravity="left"
+            app:tabBackground="@color/transparent"
+            app:tabMode="fixed"
+            app:tabRippleColor="@color/transparent"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextColor="@color/mine_unselect" />
+
+        <ImageView
+            android:id="@+id/dyna_camare"
+            android:layout_width="@dimen/xdp_36"
+            android:layout_height="@dimen/xdp_28"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/xdp_16"
+            android:src="@mipmap/paishe" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/dyna_ed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_32"
+            android:layout_marginLeft="@dimen/xdp_14"
+            android:layout_marginTop="@dimen/xdp_6"
+            android:layout_marginRight="@dimen/xdp_15"
+            android:background="@drawable/circle2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/music_search"
+                android:layout_width="@dimen/xdp_19"
+                android:layout_height="@dimen/xdp_19"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/xdp_17"
+                android:src="@mipmap/nav_icon_search" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/xdp_11"
+                android:gravity="center|left"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:text="搜索话题用户昵称"
+                android:textColor="@color/mine_unselect"
+                android:textSize="@dimen/xsp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dynamic_lin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_55"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/dynamic_thumb"
+                android:layout_width="@dimen/xdp_31"
+                android:layout_height="@dimen/xdp_31"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:src="@mipmap/photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/xdp_16"
+                android:text="正在上传中..."
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/dyna_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/xdp_5" />
+
+</LinearLayout>

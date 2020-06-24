@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.xugter:xflowlayout:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5b25abfe10ca785fc8e8a07cf2cb092a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5b25abfe10ca785fc8e8a07cf2cb092a/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.xugter/xflowlayout/1.0.2/b93c60d97ea18bf39409cf4fb11b21c18232750b/xflowlayout-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.xugter/xflowlayout/1.0.2/3fd2e986aac308471d2c92dfcef367535b28265d/xflowlayout-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

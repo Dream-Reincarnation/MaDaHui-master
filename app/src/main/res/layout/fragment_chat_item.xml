@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+    <LinearLayout
+        android:paddingLeft="@dimen/xdp_20"
+        android:paddingRight="@dimen/xdp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/chat_notifation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_70"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/chatitem_img"
+                android:layout_width="@dimen/xdp_35"
+                android:layout_height="@dimen/xdp_35"
+                android:layout_gravity="center"
+                android:src="@mipmap/messageaide" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/xdp_18"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/chatitem_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="消息助手"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/xsp_15" />
+
+                    <TextView
+                        android:id="@+id/chatitem_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="19/08/19"
+                        android:textColor="@color/tintgrey"
+                        android:textSize="@dimen/xsp_11" />
+
+                    <TextView
+                        android:id="@+id/chat_top"
+                        android:layout_width="@dimen/xdp_18"
+                        android:visibility="gone"
+                        android:layout_height="@dimen/xdp_4"
+                        android:layout_marginTop="@dimen/xdp_4"
+                        android:background="@color/purple" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/chatitem_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:text="一枝独秀穿墙来"
+                        android:textColor="@color/mine_unselect"
+                        android:textSize="@dimen/xsp_11" />
+
+                    <TextView
+                        android:id="@+id/chat_nomsg"
+                        android:layout_width="@dimen/xdp_20"
+                        android:visibility="visible"
+                        android:text="0"
+                        android:textSize="@dimen/xsp_12"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_height="@dimen/xdp_20"
+                        android:layout_marginRight="@dimen/xdp_12"
+                        android:background="@drawable/redcircle" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+      <TextView
+          android:layout_marginLeft="@dimen/xdp_20"
+          android:layout_marginRight="@dimen/xdp_20"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/xdp_1"
+          android:background="@color/background"
+          />
+  </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_hidden"
+        android:layout_width="@dimen/xdp_100"
+        android:layout_height="match_parent"
+        android:background="#ff0000"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/xsp_16" />
+    </LinearLayout>
+
+</LinearLayout>

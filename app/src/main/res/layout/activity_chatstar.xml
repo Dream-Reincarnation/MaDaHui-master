@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/chatstar_back"
+            android:layout_width="@dimen/xdp_44"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/xdp_13"
+                android:layout_height="@dimen/xdp_22"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:src="@mipmap/fanhui" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="服务提醒"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17" />
+        <ImageView
+            android:id="@+id/service_set"
+            android:layout_width="@dimen/xdp_20"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/xdp_30"
+            android:layout_height="@dimen/xdp_20"
+            android:src="@mipmap/chat_service_set"
+            />
+    </FrameLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/chatstar_smart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ajiani.maidahui.weight.recyclervire.SlideRecyclerView
+            android:id="@+id/chatstar_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

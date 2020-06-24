@@ -1,0 +1,8 @@
+.steep_padding{
+    padding-top: constant(safe-area-inset-top,10px) !important;
+    padding-top: env(safe-area-inset-top,10px) !important;
+}
+.steep_padding_bottom{
+    padding-bottom: constant(safe-area-inset-bottom) !important;
+    /*padding-bottom: env(safe-area-inset-bottom) !important;*/
+}

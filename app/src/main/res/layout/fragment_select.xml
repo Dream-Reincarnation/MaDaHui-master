@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+
+    android:layout_height="@dimen/xdp_110">
+    <LinearLayout
+        android:id="@+id/select_more"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_26"
+        android:orientation="vertical"
+        >
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/xdp_65"
+        app:cardCornerRadius="@dimen/xdp_2"
+       android:layout_marginTop="@dimen/xdp_5"
+
+        android:layout_height="@dimen/xdp_65">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#333333"
+            >
+      <ImageView
+          android:layout_width="@dimen/xdp_20"
+          android:layout_height="@dimen/xdp_20"
+          android:layout_gravity="center"
+          android:src="@mipmap/search"
+          />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginTop="@dimen/xdp_5"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/select_rel"
+        android:layout_marginTop="@dimen/xdp_5"
+        android:layout_marginLeft="@dimen/xdp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        layout="@layout/item_bar"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:background="@color/background"
+        />
+    <ImageView
+        android:layout_width="@dimen/xdp_64"
+        android:layout_height="@dimen/xdp_64"
+        android:src="@mipmap/unbind_success"
+        android:layout_marginTop="@dimen/xdp_35"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/bind_win_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定成功"
+        android:textSize="@dimen/xsp_15"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/xdp_15"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/bind_win_bt"
+        android:layout_marginTop="@dimen/xdp_50"
+        android:layout_width="match_parent"
+        android:background="@drawable/buttonred"
+        android:textColor="@color/white"
+        android:textSize="@dimen/xsp_15"
+        android:text="确定"
+        android:gravity="center"
+        android:layout_height="@dimen/xdp_40"
+        android:layout_marginLeft="@dimen/xdp_30"
+        android:layout_marginRight="@dimen/xdp_30"
+        />
+</LinearLayout>

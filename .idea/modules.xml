@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MaDaHui-master.iml" filepath="$PROJECT_DIR$/.idea/modules/MaDaHui-master.iml" group="MaDaHui-master" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="MaDaHui-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/imagepagerlib/imagepagerlib.iml" filepath="$PROJECT_DIR$/imagepagerlib/imagepagerlib.iml" group="MaDaHui-master/imagepagerlib" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" group="MaDaHui-master/library" />
+      <module fileurl="file://$PROJECT_DIR$/libsuperplayer/libsuperplayer.iml" filepath="$PROJECT_DIR$/libsuperplayer/libsuperplayer.iml" group="MaDaHui-master/libsuperplayer" />
+      <module fileurl="file://$PROJECT_DIR$/mydatapicker/mydatapicker.iml" filepath="$PROJECT_DIR$/mydatapicker/mydatapicker.iml" group="MaDaHui-master/mydatapicker" />
+      <module fileurl="file://$PROJECT_DIR$/mywheelview/mywheelview.iml" filepath="$PROJECT_DIR$/mywheelview/mywheelview.iml" group="MaDaHui-master/mywheelview" />
+      <module fileurl="file://$PROJECT_DIR$/picturesel/picturesel.iml" filepath="$PROJECT_DIR$/picturesel/picturesel.iml" group="MaDaHui-master/picturesel" />
+      <module fileurl="file://$PROJECT_DIR$/recordvocie/recordvocie.iml" filepath="$PROJECT_DIR$/recordvocie/recordvocie.iml" group="MaDaHui-master/recordvocie" />
+      <module fileurl="file://$PROJECT_DIR$/szing/szing.iml" filepath="$PROJECT_DIR$/szing/szing.iml" group="MaDaHui-master/szing" />
+      <module fileurl="file://$PROJECT_DIR$/txrecords/txrecords.iml" filepath="$PROJECT_DIR$/txrecords/txrecords.iml" group="MaDaHui-master/txrecords" />
+      <module fileurl="file://$PROJECT_DIR$/ugckit/ugckit.iml" filepath="$PROJECT_DIR$/ugckit/ugckit.iml" group="MaDaHui-master/ugckit" />
+    </modules>
+  </component>
+</project>

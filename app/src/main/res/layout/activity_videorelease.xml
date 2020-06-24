@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:background="@color/white"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <include layout="@layout/item_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:background="@color/background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_190"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/xdp_120"
+                    android:layout_marginLeft="@dimen/xdp_12"
+                    android:layout_marginTop="@dimen/xdp_17"
+                    android:layout_marginRight="@dimen/xdp_124">
+
+                    <com.ajiani.maidahui.weight.ReleaseEditText
+                        android:id="@+id/vrellase_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="添加正文"
+                        android:maxLength="60"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/editcursor" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/xdp_19"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    app:cardCornerRadius="@dimen/xdp_5"
+                    app:cardElevation="@dimen/xdp_0">
+
+                    <ImageView
+                        android:id="@+id/vrelease_video"
+                        android:layout_width="@dimen/xdp_100"
+                        android:layout_height="@dimen/xdp_120"
+                        android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/vrellase_title"
+                    android:layout_width="@dimen/xdp_85"
+                    android:layout_height="@dimen/xdp_30"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/xdp_12"
+                    android:layout_marginBottom="@dimen/xdp_10"
+
+                    android:background="@drawable/searchcircle"
+                    android:gravity="center"
+                    android:text="#添加标题"
+                    android:textColor="@color/progress"
+                    android:textSize="@dimen/xsp_15" />
+
+                <TextView
+                    android:id="@+id/friends"
+                    android:layout_width="@dimen/xdp_65"
+                    android:layout_height="@dimen/xdp_30"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/xdp_12"
+                    android:layout_marginBottom="@dimen/xdp_10"
+                    android:layout_toRightOf="@id/vrellase_title"
+                    android:background="@drawable/searchcircle"
+                    android:gravity="center"
+                    android:text="@好友"
+                    android:textColor="@color/progress"
+                    android:textSize="@dimen/xsp_15" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_1"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_marginRight="@dimen/xdp_12"
+                android:background="@color/background" />
+
+            <LinearLayout
+                android:id="@+id/vrellase_lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xdp_14"
+                android:layout_marginTop="@dimen/xdp_15"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/xdp_12"
+                    android:layout_height="@dimen/xdp_15"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/location" />
+
+                <TextView
+                    android:id="@+id/vrellase_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/xdp_14"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="添加位置"
+                    android:textColor="@color/progress"
+                    android:textSize="@dimen/xsp_15" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/xdp_12"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/videorelease_more"
+                    android:layout_width="@dimen/xdp_7"
+                    android:layout_height="@dimen/xdp_12"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    android:src="@mipmap/gengduo"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/videorelease_address_del"
+                    android:layout_width="@dimen/xdp_11"
+                    android:layout_height="@dimen/xdp_11"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    android:src="@mipmap/et_del"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_1"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:layout_marginTop="@dimen/xdp_15"
+                android:layout_marginRight="@dimen/xdp_12"
+                android:background="@color/background" />
+
+            <LinearLayout
+                android:id="@+id/vrellase_lin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xdp_14"
+                android:layout_marginTop="@dimen/xdp_15"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/xdp_12"
+                    android:layout_height="@dimen/xdp_15"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/buoumaotubiao" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/xdp_14"
+                    android:layout_weight="1"
+                    android:text="谁可以看"
+                    android:textColor="@color/progress"
+                    android:textSize="@dimen/xsp_15" />
+
+                <TextView
+                    android:id="@+id/vrellase_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    android:text="公开" />
+
+                <ImageView
+                    android:layout_width="@dimen/xdp_7"
+                    android:layout_height="@dimen/xdp_12"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    android:src="@mipmap/goo" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_1"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:layout_marginTop="@dimen/xdp_15"
+                android:layout_marginRight="@dimen/xdp_12"
+                android:background="@color/background" />
+
+            <LinearLayout
+                android:id="@+id/vrellase_lin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xdp_14"
+                android:layout_marginTop="@dimen/xdp_15"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/xdp_12"
+                    android:layout_height="@dimen/xdp_15"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/shopship" />
+
+                <TextView
+                    android:id="@+id/vrelease_shop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/xdp_14"
+                    android:layout_weight="1"
+                    android:text="我的售货袋"
+                    android:textColor="#FF6521"
+                    android:textSize="@dimen/xsp_15" />
+
+
+                <FrameLayout
+                    android:id="@+id/vrelease_farme1"
+                    android:layout_width="@dimen/xdp_25"
+                    android:layout_height="@dimen/xdp_25"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/xdp_24"
+                        android:layout_height="@dimen/xdp_24"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="@dimen/xdp_5"
+                        app:cardElevation="0dp">
+
+                        <ImageView
+                            android:id="@+id/vrelease_shop1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/photo" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/vrelease_farme2"
+                    android:layout_width="@dimen/xdp_25"
+                    android:layout_height="@dimen/xdp_25"
+                    android:layout_marginLeft="@dimen/xdp_5"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/xdp_24"
+                        android:layout_height="@dimen/xdp_24"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="@dimen/xdp_5"
+                        app:cardElevation="0dp">
+
+                        <ImageView
+                            android:id="@+id/vrelease_shop2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/photo" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/vrelease_farme3"
+                    android:layout_width="@dimen/xdp_25"
+                    android:layout_height="@dimen/xdp_25"
+                    android:layout_marginLeft="@dimen/xdp_5"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/xdp_24"
+                        android:layout_height="@dimen/xdp_24"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="@dimen/xdp_5"
+                        app:cardElevation="0dp">
+
+                        <ImageView
+                            android:id="@+id/vrelease_shop3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/photo" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/vrelease_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/xdp_5"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    android:text="添加"
+                    android:textColor="#FF6521" />
+
+                <ImageView
+                    android:layout_width="@dimen/xdp_7"
+                    android:layout_height="@dimen/xdp_12"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/xdp_12"
+                    android:src="@mipmap/shopmore" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_1"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:layout_marginTop="@dimen/xdp_15"
+                android:layout_marginRight="@dimen/xdp_12"
+                android:background="@color/background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_50"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/xdp_50"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/vrellase_savelin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/xdp_38"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="@dimen/xdp_30"
+                    android:layout_height="@dimen/xdp_30"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/caogao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="存草稿"
+                    android:textColor="@color/mine_unselect"
+                    android:textSize="@dimen/xsp_11" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/vrellase_btsend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_45"
+                android:layout_marginLeft="@dimen/xdp_19"
+                android:layout_marginRight="@dimen/xdp_38"
+                android:background="@drawable/buttonred"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xsp_17" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+  </LinearLayout>
+    <FrameLayout
+        android:id="@+id/spin_kit"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:background="@color/mine_unselect"
+            android:layout_width="@dimen/xdp_60"
+                android:layout_gravity="center"
+            android:alpha="0.5"
+            android:layout_height="@dimen/xdp_60">
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="@dimen/xdp_40"
+        android:layout_height="@dimen/xdp_40"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/white" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

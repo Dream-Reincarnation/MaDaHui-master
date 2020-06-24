@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_item"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="@dimen/xdp_65"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_height="@dimen/xdp_64">
+
+       <ImageView
+           android:id="@+id/iv_header"
+           android:layout_width="@dimen/xdp_40"
+           android:layout_height="@dimen/xdp_40"
+           android:layout_marginLeft="@dimen/xdp_12"
+           android:layout_marginTop="@dimen/xdp_10"
+           android:src="@mipmap/photo" />
+
+       <TextView
+           android:id="@+id/tv_name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_gravity="center"
+           android:layout_marginLeft="@dimen/xdp_12"
+           android:text="王二麻子"
+           android:textSize="@dimen/xdp_15" />
+   </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:background="@color/background"
+        />
+
+</LinearLayout>

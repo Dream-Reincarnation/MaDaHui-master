@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/Thme" />
+
+    <corners android:topLeftRadius="@dimen/xdp_15"
+        android:topRightRadius="@dimen/xdp_15"
+        android:bottomRightRadius="@dimen/xdp_15"
+
+        android:bottomLeftRadius="@dimen/xdp_15"/>
+    <size
+        android:width="@dimen/xdp_170"
+        android:height="@dimen/xdp_30" />
+
+</shape>

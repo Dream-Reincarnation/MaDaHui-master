@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/phone_back"
+        android:layout_width="@dimen/xdp_40"
+        android:layout_height="@dimen/xdp_40">
+
+        <ImageView
+            android:layout_width="@dimen/xdp_13"
+            android:layout_height="@dimen/xdp_22"
+            android:layout_marginLeft="@dimen/xdp_12"
+            android:layout_marginTop="@dimen/xdp_11"
+            android:src="@mipmap/fanhui"
+
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:background="@color/background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_30"
+        android:layout_marginTop="@dimen/xdp_30"
+        android:text="手机号登录"
+        android:textColor="@color/black"
+        android:textSize="@dimen/xsp_20"
+        android:textStyle="bold" />
+
+    <com.ajiani.maidahui.weight.verfity.DeleteEditText
+        android:id="@+id/phone_ed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_25"
+        android:layout_marginLeft="@dimen/xdp_30"
+        android:layout_marginTop="@dimen/xdp_62"
+        android:layout_marginRight="@dimen/xdp_30"
+        android:background="@null"
+        android:hint="输入11位手机号(仅支持中国大陆)"
+        android:maxLength="11"
+        android:numeric="integer"
+        android:textColor="@color/black"
+        android:textSize="@dimen/xsp_15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/xdp_30"
+        android:layout_marginTop="@dimen/xdp_11"
+        android:layout_marginRight="@dimen/xdp_30"
+        android:background="@color/background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_60"
+        android:layout_marginLeft="@dimen/xdp_30"
+        android:layout_marginRight="@dimen/xdp_30">
+
+        <EditText
+            android:id="@+id/phone_verifty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xdp_30"
+            android:layout_marginRight="@dimen/xdp_80"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:maxLength="4"
+            android:numeric="integer"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/phone_send"
+            android:layout_width="@dimen/xdp_80"
+            android:layout_height="@dimen/xdp_30"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/buttonred"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_1"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/xdp_11"
+            android:layout_marginRight="@dimen/xdp_80"
+            android:background="@color/background" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/phonte_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/xdp_30"
+        android:layout_marginTop="@dimen/xdp_42"
+        android:layout_marginRight="@dimen/xdp_30"
+        android:background="@drawable/buttonred"
+        android:text="进入麦达汇"
+        android:textColor="@color/white"
+        android:textSize="@dimen/xsp_17" />
+
+    <TextView
+        android:id="@+id/goto_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/xdp_30"
+        android:text="密码登录"
+        android:textColor="@color/mine_unselect"
+        android:textSize="@dimen/xsp_15"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/xdp_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录代表你已同意"
+                android:textColor="@color/mine_unselect"
+                android:textSize="@dimen/xsp_11" />
+
+            <TextView
+                android:id="@+id/phone_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《用户协议》"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

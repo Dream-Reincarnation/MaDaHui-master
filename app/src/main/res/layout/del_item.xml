@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/del_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        app:cardCornerRadius="@dimen/xdp_5">
+
+        <Button
+            android:id="@+id/del_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_50"
+            android:background="@color/white"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/xdp_15"
+            android:text="删除"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

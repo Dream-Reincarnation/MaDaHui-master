@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:background="@drawable/solide_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44">
+
+        <FrameLayout
+            android:id="@+id/report_back"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_14"
+                android:layout_height="@dimen/xdp_28"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:src="@mipmap/fanhui" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="视频举报"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:paddingBottom="@dimen/xdp_20"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/xdp_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容违规"
+                android:textSize="@dimen/xsp_12"
+                />
+
+            <LinearLayout
+                android:id="@+id/report_eroticismlin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="色情低俗"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/report_politics"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="政治敏感"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/report_crimelin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="违法犯罪"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/report_rubbishlin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="垃圾广告、售卖假货等"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/report_rumourlin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="造谣传谣、售卖假货等"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/report_insultlin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_weight="1"
+                    android:text="侮辱谩骂"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15" />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/report_originallin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="非原创内容"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_1"
+                android:background="@color/strok" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="侵权"
+                android:layout_marginTop="@dimen/xdp_24"
+                android:textSize="@dimen/xsp_12"
+                />
+            <LinearLayout
+                android:id="@+id/report_violatelin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="侵犯权益"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_1"
+                android:background="@color/strok" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未成年"
+                android:layout_marginTop="@dimen/xdp_24"
+                android:textSize="@dimen/xsp_12"
+                />
+            <LinearLayout
+                android:id="@+id/report_nochildlin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="未成年人不当行为"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/report_noseelin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="内容不适合未成年人观看"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_2"
+                android:background="@color/strok" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他"
+                android:layout_marginTop="@dimen/xdp_24"
+                android:textSize="@dimen/xsp_12"
+                />
+            <LinearLayout
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:id="@+id/report_flauntlin"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="炫富"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/report_dramaticlin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="引人不适"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/report_hurtlin"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="疑似自我伤害"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/report_inducelin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="诱导点赞、分享、关注"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/report_otherlin"
+                android:layout_marginTop="@dimen/xdp_10"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/xdp_44">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="其他"
+                    android:layout_gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/xsp_15"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/xdp_10"
+                    android:layout_height="@dimen/xdp_17"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/gengduo"
+
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

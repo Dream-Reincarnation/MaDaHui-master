@@ -1,0 +1,221 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.ajiani.maidahui"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+
+        // 添加一个默认渠道号
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "maidahui"]
+        flavorDimensions "versionCode"
+    }
+    compileOptions {
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            //是否移除无用资源
+            zipAlignEnabled true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            debuggable true
+           // //是否移除无用资源
+           // minifyEnabled true
+// 移除无用的resource文件
+          // shrinkResources true
+            buildConfigField "boolean", "LOG_DEBUG", "false" //不显示log
+            zipAlignEnabled true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //多渠道打包支持
+    productFlavors {
+
+        Tencent {//投放应用宝市场
+        }
+        Baidu {//投放百度市场
+        }
+        Wandoujia {//投放豌豆荚市场
+        }
+        Vivo {//投放vivo市场
+        }
+        Oppo {//投放oppo市场
+        }
+        Xiaomi {//投放小米市场
+        }
+        Meizu {//投放魅族市场
+        }
+        Huawei {//投放华为应用市场
+        }
+        Lenovo {//投放联想市场
+        }
+        Letv {//投放乐视市场
+        }
+        Gionee {//投放金立市场
+        }
+        HiMarket {//投放安卓市场
+        }
+        pgyer {
+        }
+
+    }
+    //注意我注释掉的，可以去掉注释，那样的话，下面这句就可以不用了
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+    /* greendao {
+        //数据库版本号
+        schemaVersion 1
+        // 设置DaoMaster、DaoSession、Dao 包名
+        daoPackage 'com.ajiani.maidahui.greenDao.db'
+
+        //应存储生成的单元测试的基本目录。默认为 src / androidTest / java。
+        targetGenDirTests 'src/main/java'
+    }*/
+    signingConfigs {
+        debug {
+            keyAlias 'Agani'
+            keyPassword 'ajiani'
+            storeFile file('../ajiani.jks')
+            storePassword 'ajiani'
+        }
+        release {
+            keyAlias 'Agani'
+            keyPassword 'ajiani'
+            storeFile file('../ajiani.jks')
+            storePassword 'ajiani'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation project(path: ':library')
+    implementation project(path: ':szing')
+    implementation project(path: ':mydatapicker')
+    implementation project(path: ':recordvocie')
+    implementation project(path: ':txrecords')
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor "com.jakewharton:butterknife-compiler:10.0.0"
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.1.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.0.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    //导入scalars包
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.youth.banner:banner:1.4.9'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    //    tablaytout
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //刷新框架
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+    //1.0.5及以前版本的老用户升级需谨慎，API改动过大
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'
+    // fragment快速实现（可选）
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //动态权限申请 依赖
+    // For developers using AndroidX in their applications
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    // For developers using the Android Support Library
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.7'
+    implementation files('libs/fastjson-1.2.7.jar')
+    implementation 'com.github.promeg:tinypinyin:2.0.1'
+    implementation files('libs/TencentLocationSdk_v7.1.7_r02c4bb5a_20190523_115148.jar')
+    implementation 'com.github.ybq:Android-SpinKit:1.0.4'
+    //支付宝支付
+    implementation(name: 'alipaySdk-15.6.5-20190718211159-noUtdid', ext: 'aar')
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.4.5'
+    implementation 'com.wang.avi:library:2.1.3'
+    // fragment快速实现（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0-beta05'
+    implementation 'com.android.support:multidex:1.0.3'
+    //
+    implementation 'com.github.KevinYou128:HotHeart:v1.1'
+    //播放器
+    //socketIO
+    implementation('io.socket:socket.io-client:0.8.3');
+    //视频缓存
+    implementation files('libs/open_sdk_r5990_lite.jar')
+    implementation files('libs/umeng-share-core-6.9.6.jar')
+    implementation files('libs/umeng-shareboard-widget-6.9.6.jar')
+    implementation files('libs/wechat-sdk-android-without-mta-5.1.4.jar')
+    implementation files('libs/umeng-sharetool-6.9.6.jar')
+    implementation files('libs/umeng-share-wechat-full-6.9.6.jar')
+    implementation files('libs/umeng-share-QQ-full-6.9.6.jar')
+    implementation files('libs/umeng-common-2.1.0.jar')
+   //PushSDK必须依赖utdid库，所以需要加入对应依赖
+    implementation 'com.umeng.umsdk:utdid:1.1.5.3'
+    //PushSDK
+     implementation 'com.umeng.umsdk:push:6.0.1'
+    //greendao
+    implementation 'org.greenrobot:greendao:3.2.2' // 添加库
+    //数据库升级防止丢失数据
+    implementation 'io.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //腾讯播放器
+//    implementation(name: 'libsuperplayer', ext: 'aar')
+    //tx视频全功能专业版
+//    implementation(name: 'LiteAVSDK_Professional', ext: 'aar')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(name: 'LiteAVSDK_UGC_7.1.8771', ext: 'aar')
+    //播放器
+    implementation(name: 'libsuperplayer', ext: 'aar')
+    // 超级播放器弹幕集成的第三方库
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.5.3'
+
+    implementation 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    //友盟统计
+    implementation 'com.umeng.umsdk:analytics:8.0.0'
+    //预览图片
+    implementation 'com.ycjiang:imgepreviewlibrary:1.1.3'
+   /* //选择按钮
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'*/
+    //弹出功能菜单
+    implementation 'com.noober.floatmenu:common:1.0.4'
+
+    implementation 'com.xugter:xflowlayout:1.0.2'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'cn.jzvd:jiaozivideoplayer:7.2.4'
+
+}

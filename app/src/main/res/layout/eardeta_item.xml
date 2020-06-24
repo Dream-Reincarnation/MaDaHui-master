@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+   <LinearLayout
+       android:layout_marginTop="@dimen/xdp_10"
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginLeft="@dimen/xdp_12"
+       >
+       <TextView
+           android:id="@+id/top_state"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="充值成功"
+           android:textColor="@color/black"
+           android:textSize="@dimen/xsp_13"
+           />
+       <TextView
+
+           android:layout_marginTop="@dimen/xdp_8"
+           android:id="@+id/ear_blanace"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="余额8.07"
+           android:layout_marginBottom="@dimen/xdp_4"
+           android:textColor="@color/black"
+           android:textSize="@dimen/xsp_11"
+           />
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xdp_10"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/ear_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="+5.00"
+            android:textSize="@dimen/xsp_15"
+            android:textColor="@color/Thme"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/xdp_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08-20 10:41:12"
+            android:id="@+id/ear_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_11"
+            android:layout_marginBottom="@dimen/xdp_4"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:background="@color/background"
+        android:layout_gravity="bottom"
+        />
+</LinearLayout>

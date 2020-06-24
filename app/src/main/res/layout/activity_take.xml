@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".activity.dynamic.TakePhotoActivity">
+    <com.ajiani.maidahui.weight.record.BeautySettingPannel
+        android:id="@+id/beauty_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:visibility="gone" />
+    <!--  -->
+    <FrameLayout
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/record_mask_buttom" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true" />
+        <com.ajiani.maidahui.weight.record.RecordProgressView
+            android:id="@+id/recordprogress"
+            android:layout_marginTop="@dimen/xdp_6"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/xdp_8"
+            android:layout_marginRight="@dimen/xdp_8"
+            android:layout_height="@dimen/xdp_6" />
+        <FrameLayout
+            android:id="@+id/back"
+            android:layout_marginTop="@dimen/xdp_20"
+            android:layout_width="@dimen/xdp_40"
+            android:layout_height="@dimen/xdp_40">
+            <ImageView
+                android:id="@+id/take_back"
+                android:layout_width="@dimen/xdp_17"
+                android:layout_height="@dimen/xdp_17"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:src="@mipmap/fanhui3" />
+        </FrameLayout>
+        <!--  切换摄像头  -->
+        <RelativeLayout
+            android:id="@+id/carme_rela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/xdp_34"
+            android:layout_marginRight="@dimen/xdp_18">
+
+            <LinearLayout
+                android:id="@+id/take_changecarme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/xdp_24"
+                    android:layout_height="@dimen/xdp_21"
+                    android:src="@mipmap/qiehuanjingtou" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xdp_8"
+                    android:text="翻转"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/xsp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/take_lightlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/take_changecarme"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/xdp_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/take_change"
+                    android:layout_width="@dimen/xdp_20"
+                    android:layout_height="@dimen/xdp_24"
+                    android:src="@mipmap/shanguangdengguanbi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xdp_8"
+                    android:text="闪光灯"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/xsp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/take_chagesplin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/take_lightlin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/xdp_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/take_changespeed"
+                    android:layout_width="@dimen/xdp_20"
+                    android:layout_height="@dimen/xdp_24"
+                    android:src="@mipmap/changespeed" />
+
+                <TextView
+                    android:id="@+id/take_speedname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xdp_8"
+                    android:text="变速:关"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/xsp_10" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/voice_lin"
+                android:layout_marginTop="@dimen/xdp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/take_chagesplin"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/xdp_20"
+                    android:layout_height="@dimen/xdp_24"
+
+                    android:src="@mipmap/dyna_voice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xdp_3"
+                    android:text="变声"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/xsp_10" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/take_videocut"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voice_lin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/xdp_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/take_cut"
+                    android:layout_width="@dimen/xdp_24"
+                    android:layout_height="@dimen/xdp_24"
+                    android:src="@mipmap/cut_music" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xdp_8"
+                    android:text="裁剪音乐"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/xsp_10" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--录制时间显示 -->
+        <LinearLayout
+            android:id="@+id/take_time"
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xdp_17"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/xdp_140"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/take_time_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/xdp_4"
+                android:text="15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xsp_13" />
+
+            <TextView
+                android:layout_width="@dimen/xdp_1"
+                android:layout_height="@dimen/xdp_12"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/take_time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/xdp_4"
+                android:text="15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xsp_13" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/take_videomusic"
+            android:layout_marginTop="@dimen/xdp_34"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:layout_height="@dimen/xdp_15"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="@dimen/xdp_10"
+                android:layout_height="@dimen/xdp_10"
+                android:src="@mipmap/videoed_music"
+
+                />
+            <TextView
+                android:id="@+id/edit_musicname"
+                android:layout_width="@dimen/xdp_50"
+                android:layout_height="wrap_content"
+                android:text="选择音乐"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:marqueeRepeatLimit="-1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xsp_10"
+                android:layout_marginLeft="@dimen/xdp_6"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_175"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/xdp_15">
+        <!--调整速度的tablayourt-->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/take_tab"
+            android:layout_width="@dimen/xdp_270"
+            android:layout_height="@dimen/xdp_35"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dyna_tab"
+            android:visibility="invisible"
+            app:tabIndicatorColor="@color/transparent"
+            app:tabMode="fixed"
+            app:tabRippleColor="@color/transparent"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/dyna_tab_text"
+            app:tabTextColor="@color/mine_unselect" />
+
+        <LinearLayout
+            android:id="@+id/dyna_snashot"
+            android:layout_width="@dimen/xdp_100"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dyna_tab"
+            android:layout_height="@dimen/xdp_27"
+            >
+            <FrameLayout
+                android:id="@+id/dyna_snapshot_farm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/dyna_snapshot_img"
+                android:layout_marginLeft="@dimen/xdp_8"
+                android:layout_gravity="center|left"
+                android:layout_width="@dimen/xdp_13"
+                android:src="@mipmap/dyna_circle"
+                android:layout_height="@dimen/xdp_13" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快拍模式"
+
+                android:layout_marginLeft="@dimen/xdp_3"
+                android:layout_gravity="center"
+                android:textSize="@dimen/xsp_15"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/take_lin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_80"
+            android:layout_below="@id/take_tab"
+            android:layout_marginLeft="@dimen/xdp_10"
+            android:layout_marginTop="@dimen/xdp_15"
+            android:layout_marginRight="@dimen/xdp_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/take_voicelin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/xdp_24"
+                        android:layout_height="@dimen/xdp_24"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/dyna_bauty" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/xdp_3"
+                        android:text="美颜"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xsp_10" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <FrameLayout
+                    android:layout_width="@dimen/xdp_80"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/xdp_100">
+                    <ImageView
+                        android:layout_width="@dimen/xdp_80"
+                        android:layout_height="@dimen/xdp_80"
+                        android:layout_gravity="center"
+
+                        />
+                    <ImageView
+                        android:id="@+id/take_camare2"
+                        android:layout_width="@dimen/xdp_43"
+                        android:alpha="0.3"
+                        android:layout_height="@dimen/xdp_43"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle"
+                        android:visibility="visible" />
+                    <ImageView
+                        android:id="@+id/take_camare3"
+                        android:layout_width="@dimen/xdp_43"
+                        android:alpha="0.5"
+                        android:layout_height="@dimen/xdp_43"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle"
+                        android:visibility="visible" />
+                    <ImageView
+                        android:id="@+id/take_camare"
+                        android:layout_width="@dimen/xdp_43"
+
+                        android:layout_height="@dimen/xdp_43"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle"
+                        android:visibility="visible" />
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/take_farme"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <com.ajiani.maidahui.weight.circle.CircularProgressView
+                        android:id="@+id/take_circle"
+                        android:layout_width="@dimen/xdp_70"
+                        android:layout_height="@dimen/xdp_70"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:alpha="1"
+                        app:backWidth="@dimen/xdp_4"
+                        app:progColor="@color/Thme"
+                        app:progFirstColor="@color/Thme"
+                        app:progStartColor="@color/Thme"
+                        app:progress="36000" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/take_piclin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/dyna_musiclin"
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/xdp_24"
+                        android:layout_height="@dimen/xdp_24"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/dyna_music" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/xdp_3"
+                        android:text="音乐"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xsp_10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dyna_photolin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dyna_card"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/xdp_26"
+                        app:cardCornerRadius="@dimen/xsp_5"
+
+                        android:layout_height="@dimen/xdp_26">
+                    <com.ajiani.maidahui.weight.circle.RoundCornerImageView
+                        android:id="@+id/dyna_photo"
+                        android:layout_width="@dimen/xdp_24"
+                        android:layout_height="@dimen/xdp_24"
+                         app:left_bottom_radius="@dimen/xdp_5"
+                        app:left_top_radius="@dimen/xdp_5"
+                        app:right_bottom_radius="@dimen/xdp_5"
+                        app:right_top_radius="@dimen/xdp_5"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/dyna_picture" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/xdp_3"
+                        android:text="相册"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xsp_10" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/take_nextLin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/take_del"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="@dimen/xdp_24"
+                        android:layout_height="@dimen/xdp_24"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/dyna_del" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/xdp_3"
+                        android:text="回删"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xsp_10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/take_next"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="@dimen/xdp_24"
+                        android:layout_height="@dimen/xdp_24"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/dyna_next" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/xdp_3"
+                        android:text="去编辑"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xsp_10" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--选择拍摄方式-->
+        <com.ajiani.maidahui.weight.AutoLocateHorizontalView
+            android:id="@+id/take_rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_25"
+            android:layout_below="@id/take_lin"
+            android:layout_marginTop="@dimen/xdp_15"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/record_tv_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="无"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/xsp_20"
+        android:visibility="invisible" />
+    <ImageView
+        android:id="@+id/iv_snapshot_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+
+
+    <FrameLayout
+        android:id="@+id/spin_kit"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:background="@color/mine_unselect"
+            android:layout_width="@dimen/xdp_60"
+            android:layout_gravity="center"
+            android:alpha="0.5"
+            android:layout_height="@dimen/xdp_60">
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                style="@style/SpinKitView.Large.FadingCircle"
+                android:layout_width="@dimen/xdp_40"
+                android:layout_height="@dimen/xdp_40"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/white" />
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

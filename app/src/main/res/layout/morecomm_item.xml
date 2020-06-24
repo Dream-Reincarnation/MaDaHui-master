@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_15"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/moreitem_img"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_height="@dimen/xdp_30"
+            android:src="@mipmap/photo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/moreitem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xdp_11"
+                android:text="关虎屯屯长"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_15" />
+
+            <TextView
+
+                android:id="@+id/moreitem_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:text="08-17" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/moreitem_like"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xdp_17"
+
+            android:layout_marginTop="@dimen/xdp_0"
+            android:src="@mipmap/aixin" />
+
+        <TextView
+            android:id="@+id/moreitem_likenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xdp_2"
+            android:layout_marginRight="@dimen/xdp_12"
+            android:text="1.5w"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_11" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/moreitem_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_60"
+        android:layout_marginTop="@dimen/xdp_13"
+        android:text="他家衣服怎么样他家衣服怎么样他家衣服怎么他家衣服"
+        android:textColor="@color/black"
+        android:textSize="@dimen/xsp_15" />
+</LinearLayout>

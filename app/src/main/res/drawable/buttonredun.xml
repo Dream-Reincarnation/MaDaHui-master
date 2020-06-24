@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/mine_unselect" />
+    <corners android:topLeftRadius="@dimen/xdp_23"
+        android:topRightRadius="@dimen/xdp_23"
+        android:bottomRightRadius="@dimen/xdp_23"
+        android:bottomLeftRadius="@dimen/xdp_23"/>
+</shape>

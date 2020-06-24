@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/minedyna_lin2"
+    android:layout_height="@dimen/xdp_60">
+    
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+         >
+        <ImageView
+            android:id="@+id/minedyna_head"
+            android:layout_width="@dimen/xdp_35"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/xdp_35"
+            android:src="@mipmap/photo"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/xdp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片"
+            android:id="@+id/minedyna_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_13"
+            android:layout_toRightOf="@id/minedyna_head"
+            android:layout_marginLeft="@dimen/xdp_10"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/xdp_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0收藏"
+            android:id="@+id/minedyna_star"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_11"
+            android:layout_below="@id/minedyna_type"
+            android:layout_toRightOf="@id/minedyna_head"
+            android:layout_marginLeft="@dimen/xdp_10"
+            />
+
+        <TextView
+            android:id="@+id/minedyna_earning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/minedyna_type"
+            android:layout_marginLeft="@dimen/xdp_18"
+            android:layout_marginTop="@dimen/xdp_2"
+            android:layout_toRightOf="@id/minedyna_star"
+            android:text="0收益"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_11" />
+
+        <TextView
+            android:layout_marginTop="@dimen/xdp_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsp_11"
+            android:textColor="@color/mine_unselect"
+            android:id="@+id/minedyna_time"
+            android:text="2018-09-18"
+            android:layout_below="@id/minedyna_star"
+            android:layout_toRightOf="@id/minedyna_head"
+            android:layout_marginLeft="@dimen/xdp_10"
+            />
+    </RelativeLayout>
+   <ImageView
+       android:layout_width="@dimen/xdp_10"
+       android:layout_height="@dimen/xdp_15"
+       android:src="@mipmap/gengduo"
+       android:layout_gravity="center"
+       />
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/picturesel_farm"
+        android:background="@drawable/tabcircle"
+        android:layout_width="match_parent"
+
+        android:gravity="center"
+        android:layout_height="@dimen/xdp_44">
+        <FrameLayout
+            android:id="@+id/picturesel_back"
+            android:layout_marginLeft="@dimen/xdp_26"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/xdp_16"
+            android:layout_height="@dimen/xdp_16"
+            android:layout_gravity="center|left"
+            android:src="@mipmap/cuo"
+            />
+        </FrameLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/picturesel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="相机胶卷"
+                android:textSize="@dimen/xsp_17"
+                android:textColor="#212121"
+                />
+            <ImageView
+                android:id="@+id/picture_top"
+                android:layout_marginLeft="@dimen/xdp_8"
+                android:layout_gravity="center"
+                android:src="@mipmap/picvideo_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/picture_sel_tab"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:tabTextColor="#888888"
+        app:tabIndicatorFullWidth="false"
+
+        app:tabSelectedTextColor="#212121"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"/>
+
+    <LinearLayout
+
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/picture_video"
+            android:layout_width="@dimen/xdp_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/xsp_15"
+            android:textColor="@color/black"
+            android:layout_height="match_parent"
+            android:text="视频"
+
+            />
+        <TextView
+            android:id="@+id/picture_photo"
+            android:layout_width="@dimen/xdp_0"
+            android:layout_weight="1"
+            android:textColor="@color/mine_unselect"
+            android:textSize="@dimen/xsp_15"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="照片"
+
+            />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/picture_lines"
+        android:visibility="gone"
+        android:layout_width="@dimen/xdp_10"
+        android:layout_height="@dimen/xdp_3"
+        android:background="@color/Thme"
+        />
+    
+    <com.ajiani.maidahui.weight.MyViewPager
+        android:background="@color/white"
+        android:id="@+id/picture_sel_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

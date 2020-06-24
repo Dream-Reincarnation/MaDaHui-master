@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:id="@+id/chatact_back"
+            android:layout_width="@dimen/xdp_40"
+            android:layout_height="@dimen/xdp_40">
+            <ImageView
+
+                android:layout_width="@dimen/xdp_13"
+                android:layout_height="@dimen/xdp_22"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:src="@mipmap/fanhui" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/chatact_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="聊天设置"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17" />
+
+    </FrameLayout>
+   
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/xdp_8"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="@dimen/xdp_5"
+        android:layout_height="@dimen/xdp_142">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:id="@+id/chat_set_lin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_97"
+            android:orientation="horizontal"
+            >
+         <ImageView
+             android:layout_marginTop="@dimen/xdp_20"
+             android:layout_marginLeft="@dimen/xdp_16"
+             android:layout_width="@dimen/xdp_50"
+             android:layout_height="@dimen/xdp_50"
+             android:id="@+id/chat_set_head"
+
+             />
+
+            <TextView
+                android:id="@+id/chat_set_name"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xdp_15"
+                android:layout_marginTop="@dimen/xdp_35"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_21" />
+            
+            <ImageView
+                android:layout_marginRight="@dimen/xdp_4"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/xdp_8"
+                android:layout_height="@dimen/xdp_18"
+                android:src="@mipmap/gengduo"
+                />
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xdp_1"
+                android:background="@color/background"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/xdp_10"
+                android:gravity="center|left"
+                android:text="进店逛逛"
+                android:textSize="@dimen/xsp_15"
+
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/xdp_7"
+        app:cardElevation="0dp"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        app:cardCornerRadius="@dimen/xdp_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsp_15"
+            android:textColor="@color/black"
+            android:text="置顶聊天"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/xdp_10"
+            />
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_marginRight="@dimen/xdp_6"
+            android:id="@+id/chat_set_compat"
+            android:layout_gravity="center|right"
+            android:layout_width="@dimen/xdp_54"
+            android:theme="@style/MySwitchTheme"
+            android:layout_height="@dimen/xdp_30" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/xdp_7"
+        app:cardElevation="0dp"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        app:cardCornerRadius="@dimen/xdp_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsp_15"
+            android:textColor="@color/black"
+            android:text="消息免打扰"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/xdp_10"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/chat_set_compat2"
+            android:layout_marginRight="@dimen/xdp_6"
+            android:layout_gravity="center|right"
+            android:layout_width="@dimen/xdp_54"
+            android:theme="@style/MySwitchTheme"
+            android:layout_height="@dimen/xdp_30" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chat_set_report"
+        android:layout_marginTop="@dimen/xdp_7"
+        app:cardElevation="0dp"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        app:cardCornerRadius="@dimen/xdp_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsp_15"
+            android:textColor="@color/black"
+            android:text="举报"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/xdp_10"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/xdp_8"
+            android:layout_height="@dimen/xdp_18"
+            android:layout_gravity="center|right"
+            android:src="@mipmap/gengduo"
+            android:layout_marginRight="@dimen/xdp_5"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chat_set_block"
+        android:layout_marginTop="@dimen/xdp_7"
+        app:cardElevation="0dp"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginRight="@dimen/xdp_12"
+        app:cardCornerRadius="@dimen/xdp_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsp_15"
+            android:textColor="@color/black"
+            android:text="拉黑"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/xdp_10"
+            />
+        
+        <ImageView
+            android:layout_width="@dimen/xdp_8"
+            android:layout_height="@dimen/xdp_18"
+            android:layout_gravity="center|right"
+            android:src="@mipmap/gengduo"
+            android:layout_marginRight="@dimen/xdp_5"
+            />
+    </androidx.cardview.widget.CardView>
+    
+
+</LinearLayout>

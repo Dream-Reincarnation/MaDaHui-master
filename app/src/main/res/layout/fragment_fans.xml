@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="visible"
+       android:id="@+id/fans_rel"
+       />
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_width="@dimen/xdp_157"
+          android:layout_height="@dimen/xdp_109"
+          android:layout_gravity="center"
+          android:src="@mipmap/fensi"
+          />
+      <TextView
+          android:layout_marginTop="@dimen/xdp_90"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="你还没有粉丝"
+          android:textSize="@dimen/xsp_13"
+          android:layout_gravity="center"
+          android:textColor="@color/black"
+          />
+   </FrameLayout>
+</LinearLayout>

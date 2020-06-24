@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: :libsuperplayer:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a1d38bdd25ab33d45f4a7a50a43f4c6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a1d38bdd25ab33d45f4a7a50a43f4c6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

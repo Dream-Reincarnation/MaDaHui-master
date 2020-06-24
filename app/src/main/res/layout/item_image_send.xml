@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_text_send"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/item_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:textColor="#999999"
+        android:textSize="12dp"
+         android:visibility="gone" />
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_marginRight="@dimen/xdp_10"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/xdp_0"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/xdp_10"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/chat_item_header"
+            android:layout_width="@dimen/xdp_35"
+            android:layout_height="@dimen/xdp_35"
+            android:layout_alignParentRight="true"
+             android:scaleType="centerInside"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/chat_item_layout_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             android:layout_toLeftOf="@id/chat_item_header"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chat_receiver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="昵称"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/xsp_12" />
+            <com.ajiani.maidahui.weight.chat.BubbleImageView
+                android:id="@+id/bivPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                 android:transitionName="sharedView"
+                app:angle="@dimen/xdp_6"
+                app:arrowHeight="@dimen/xdp_8"
+                app:arrowLocation="right"
+                app:arrowPosition="@dimen/xdp_15"
+                app:arrowWidth="@dimen/xdp_5" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/chat_item_fail"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/chat_item_layout_content"
+            android:focusable="false"
+            android:src="@drawable/msg_state_fail_resend"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/chat_item_progress"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/chat_item_layout_content"
+            android:visibility="invisible" />
+    </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/chat_fram_check"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_height="match_parent">
+         <ImageView
+             android:id="@+id/chat_img"
+             android:layout_width="@dimen/xdp_20"
+             android:layout_gravity="center"
+             android:layout_height="@dimen/xdp_20"
+             android:src="@mipmap/unsel"
+             />
+        </FrameLayout>
+     </LinearLayout>
+</LinearLayout>

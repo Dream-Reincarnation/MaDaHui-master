@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6dbf7619bbf088fcd3f7a2a37b73a420/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6dbf7619bbf088fcd3f7a2a37b73a420/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.yuweiguocn/GreenDaoUpgradeHelper/v2.2.1/58b7706bf00663dc8e8c3ec896f03e194b81267/GreenDaoUpgradeHelper-v2.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/circlebg"
+    android:layout_height="@dimen/xdp_170">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dyna_voice_rel"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_110"/>
+     <TextView
+         android:layout_width="match_parent"
+         android:background="#424242"
+         android:layout_height="@dimen/xdp_1" />
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/xdp_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/xdp_26"
+        android:orientation="horizontal"
+        >
+        <FrameLayout
+            android:id="@+id/dyna_take_back"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/xdp_30">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_16"
+
+                android:layout_height="match_parent"
+                android:src="@mipmap/dyna_take_false" />
+        </FrameLayout>
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="match_parent"
+             android:orientation="horizontal"
+             >
+             <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+           <com.google.android.material.tabs.TabLayout
+               android:id="@+id/dyna_voice_tab"
+               android:layout_width="@dimen/xdp_110"
+               app:tabBackground="@color/transparent"
+               app:tabIndicatorColor="@color/transparent"
+               app:tabMode="fixed"
+               app:tabRippleColor="@color/transparent"
+               app:tabSelectedTextColor="@color/white"
+               app:tabTextColor="@color/mine_unselect"
+               android:layout_gravity="center"
+               android:layout_height="match_parent"/>
+         </FrameLayout>
+         </LinearLayout>
+        <FrameLayout
+            android:id="@+id/dyna_take_true"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/xdp_26"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/xdp_16"
+            android:layout_height="@dimen/xdp_16"
+            android:layout_gravity="center"
+            android:src="@mipmap/dyna_take_right"
+            />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

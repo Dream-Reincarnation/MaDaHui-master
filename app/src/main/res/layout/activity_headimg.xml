@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:id="@+id/head_lin"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/head"
+        android:src="@mipmap/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/head_take"
+        android:layout_width="@dimen/xdp_70"
+        android:layout_height="@dimen/xdp_40"
+        android:text="更换"
+        android:gravity="center"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/xdp_50"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/xdp_100"
+        android:textSize="@dimen/xsp_17"
+        />
+  </FrameLayout>
+</LinearLayout>

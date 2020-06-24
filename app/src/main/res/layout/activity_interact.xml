@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:orientation="horizontal">
+     <LinearLayout
+         android:id="@+id/chatinter_back"
+         android:layout_width="@dimen/xdp_44"
+         android:layout_height="match_parent">
+        <ImageView
+
+            android:layout_width="@dimen/xdp_13"
+            android:layout_height="@dimen/xdp_22"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/xdp_15"
+            android:src="@mipmap/fanhui" />
+     </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="平台广播"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17" />
+        <ImageView
+            android:id="@+id/chat_board_set"
+            android:layout_width="@dimen/xdp_22"
+            android:layout_height="@dimen/xdp_22"
+            android:src="@mipmap/chat_service_set"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/xdp_12"
+            />
+    </FrameLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:id="@+id/chatinter_smart"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/chatinter_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

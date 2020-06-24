@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attent_lins"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/xdp_44"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/xsp_15"
+           android:textColor="@color/black"
+           android:text="关注"
+           android:layout_gravity="center"
+           />
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_marginRight="@dimen/xsp_12"
+           android:layout_gravity="right"
+           android:gravity="center"
+           >
+           <ImageView
+               android:layout_width="@dimen/xdp_25"
+               android:layout_height="@dimen/xdp_20"
+               android:src="@mipmap/atten_garden"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:text="果园"
+               android:textSize="@dimen/xsp_13"/>
+
+
+
+       </LinearLayout>
+
+
+   </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:background="@color/background"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/attent_smart"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/attent_rel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

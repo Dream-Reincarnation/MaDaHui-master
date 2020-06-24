@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="@dimen/xdp_12"
+    android:id="@+id/board_lin"
+    android:layout_marginTop="@dimen/xdp_8"
+    android:paddingRight="@dimen/xdp_12"
+    android:background="@color/white"
+    android:layout_height="@dimen/xdp_112">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_marginTop="@dimen/xdp_6"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+          <TextView
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:text="sd"
+              android:layout_height="wrap_content"
+              android:id="@+id/board_title"
+              android:textColor="@color/black"
+              android:textSize="@dimen/xsp_14"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_marginRight="@dimen/xdp_12"
+              android:layout_height="wrap_content"
+              android:id="@+id/board_time"
+              android:text="2012-21-12"
+              android:textSize="@dimen/xsp_13"
+              />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_marginTop="@dimen/xdp_12"
+          android:layout_height="wrap_content">
+          <ImageView
+              android:id="@+id/board_img"
+              android:layout_width="@dimen/xdp_70"
+              android:layout_height="@dimen/xdp_70"
+              />
+
+          <TextView
+              android:id="@+id/board_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/xdp_10"
+              android:ellipsize="end"
+              android:maxLines="3"
+              android:textColor="@color/black"
+              android:textSize="@dimen/xsp_13" />
+
+      </LinearLayout>
+</LinearLayout>

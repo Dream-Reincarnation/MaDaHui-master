@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:useLevel="false"
+    >
+    <solid android:color="#4D000000"
+        />
+    <corners
+        android:topLeftRadius="@dimen/xdp_18"
+        android:topRightRadius="@dimen/xdp_18"
+        android:bottomLeftRadius="@dimen/xdp_18"
+        android:bottomRightRadius="@dimen/xdp_18" />
+    <size
+        android:width="@dimen/xdp_250"
+        android:height="@dimen/xdp_35" />
+    <!-- 边框 -->
+
+</shape>

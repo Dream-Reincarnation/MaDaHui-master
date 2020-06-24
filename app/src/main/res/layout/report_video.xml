@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_44"
+        android:background="@drawable/solide_item">
+
+        <FrameLayout
+            android:id="@+id/report_back"
+            android:layout_width="@dimen/xdp_30"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/xdp_14"
+                android:layout_height="@dimen/xdp_28"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/xdp_12"
+                android:src="@mipmap/fanhui" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="视频举报"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_17" />
+
+        <TextView
+            android:id="@+id/report_video_commint"
+            android:layout_width="@dimen/xdp_40"
+            android:layout_height="@dimen/xdp_30"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/xdp_12"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/Thme"
+            android:textSize="@dimen/xsp_15" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="举报理由"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+        <TextView
+            android:id="@+id/report_video_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xdp_16"
+            android:text="色情低俗"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/report_video_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_25"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原作者信息(选填)"
+            android:textColor="@color/tintgrey"
+            android:textSize="@dimen/xsp_13" />
+
+        <EditText
+            android:id="@+id/report_video_another"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_15"
+            android:layout_marginTop="@dimen/xdp_38"
+            android:background="@null"
+            android:hint="原作者ID"
+            android:textSize="@dimen/xsp_13" />
+
+        <EditText
+            android:id="@+id/report_video_link"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xdp_15"
+            android:layout_marginTop="@dimen/xdp_25"
+            android:background="@null"
+            android:hint="原作品连接"
+            android:textSize="@dimen/xsp_13" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_26">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="举报描述（选填）"
+            android:textColor="@color/tintgrey"
+            android:textSize="@dimen/xsp_13" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/xdp_12">
+
+            <TextView
+                android:id="@+id/report_video_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/xsp_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/report_video_min"
+                android:text="/200"
+                android:textColor="@color/tintgrey"
+                android:textSize="@dimen/xsp_13" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/report_video_farm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_165"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_10"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:background="@drawable/verifty">
+
+        <EditText
+            android:id="@+id/report_video_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/xdp_10"
+            android:background="@null"
+            android:hint="详细描述举报理由..."
+            android:maxLength="200"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_13" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/report_video_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_18"
+        android:layout_marginRight="@dimen/xdp_12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_marginTop="@dimen/xdp_24"
+        android:layout_marginRight="@dimen/xdp_12"
+        android:text="您的举报将在12小时内受理，若举报成功会第时间告知处理结果。请尽量提交完整的举报描述及材料，无需重复举报，感谢您的配合。"
+        android:textColor="@color/tintgrey"
+        android:textSize="@dimen/xsp_12" />
+
+
+</LinearLayout>

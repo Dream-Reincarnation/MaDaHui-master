@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#1f1f22"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/xdp_15"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="@dimen/xdp_5"
+
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/layout_palyer"
+        android:layout_width="@dimen/xdp_238"
+        android:layout_height="@dimen/xdp_450"/>
+</androidx.cardview.widget.CardView>
+
+    <com.ajiani.maidahui.weight.record.cut.TCVideoEditView
+        android:id="@+id/video_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_60"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/xdp_80"
+        android:layout_marginLeft="@dimen/xdp_16"
+        android:layout_marginRight="@dimen/xdp_19" />
+
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/xdp_50"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xdp_1"
+        android:background="#424242"
+        />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_height="@dimen/xdp_50">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="裁剪"
+        android:textColor="@color/white"
+        android:textSize="@dimen/xsp_17"
+        android:layout_centerInParent="true"
+        />
+      <FrameLayout
+          android:id="@+id/video_cut_next"
+          android:layout_alignParentRight="true"
+          android:layout_width="@dimen/xdp_40"
+          android:layout_height="match_parent">
+          
+          <ImageView
+              android:layout_width="@dimen/xdp_16"
+              android:layout_height="@dimen/xdp_11"
+              android:src="@mipmap/dyna_take_right"
+              android:layout_gravity="center|right"
+              android:layout_marginRight="@dimen/xdp_20"
+              />
+          
+      </FrameLayout>
+       <FrameLayout
+            android:id="@+id/video_cut_back"
+           android:layout_width="@dimen/xdp_40"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:layout_width="@dimen/xdp_16"
+               android:layout_height="@dimen/xdp_11"
+               android:src="@mipmap/dyna_take_false"
+               android:layout_gravity="center|left"
+               android:layout_marginLeft="@dimen/xdp_20"
+               />
+
+       </FrameLayout>
+   </RelativeLayout>
+
+</RelativeLayout>

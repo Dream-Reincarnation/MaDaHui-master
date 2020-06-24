@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/xdp_60">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:layout_width="@dimen/xdp_40"
+        android:layout_height="@dimen/xdp_40"
+        android:id="@+id/fans_head"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="用户昵称"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/xdp_12"
+        android:textColor="@color/black"
+        android:textSize="@dimen/xsp_15"
+        android:id="@+id/fans_name"
+        />
+     <Button
+         android:id="@+id/fan_bt"
+         android:layout_marginRight="@dimen/xdp_12"
+         android:layout_width="@dimen/xdp_75"
+         android:layout_height="@dimen/xdp_30"
+         android:background="@drawable/theml"
+         android:text="关注"
+         android:textColor="@color/white"
+         android:layout_gravity="center"
+
+         />
+
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#999999"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+      <LinearLayout
+          android:layout_marginRight="@dimen/xdp_10"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+    <RelativeLayout
+        android:layout_width="@dimen/xdp_0"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/xdp_10"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/chat_item_header"
+            android:layout_width="@dimen/xdp_35"
+            android:layout_height="@dimen/xdp_35"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+
+            />
+
+        <TextView
+            android:id="@+id/chat_receiver_name"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/xdp_10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="昵称"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/chat_item_header"
+            android:textColor="@color/black"
+            android:textSize="@dimen/xsp_12" />
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/chat_item_layout_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/chat_item_header"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/chatitem_offerlin"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/xdp_70"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/chatitem_shopimg"
+                    android:layout_width="@dimen/xdp_44"
+                    android:layout_height="@dimen/xdp_44"
+                    android:layout_marginLeft="@dimen/xdp_5"
+                    android:layout_marginTop="@dimen/xdp_5"
+                    android:src="@mipmap/photo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xdp_5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/shops_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/shops_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="300.00"
+                            android:textColor="@color/red" />
+
+                        <TextView
+                            android:id="@+id/shops_tx"
+                            android:layout_width="@dimen/xdp_60"
+                            android:layout_height="@dimen/xdp_20"
+                            android:layout_marginLeft="@dimen/xdp_5"
+                            android:background="@drawable/theml"
+                            android:text="立即付款"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/xdp_10"
+                        android:text="订单报价已生成,请付款" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+          <FrameLayout
+              android:id="@+id/chat_fram_check"
+              android:layout_width="@dimen/xdp_30"
+              android:layout_height="match_parent">
+              <ImageView
+                  android:id="@+id/chat_img"
+                  android:layout_width="@dimen/xdp_20"
+                  android:layout_gravity="center"
+                  android:layout_height="@dimen/xdp_20"
+                  android:src="@mipmap/unsel"
+                  />
+          </FrameLayout>
+      </LinearLayout>
+
+</LinearLayout>

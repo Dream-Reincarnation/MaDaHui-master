@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ycjiang:imgepreviewlibrary:1.1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b2271ab34722924bbd181c8e355d48bf/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b2271ab34722924bbd181c8e355d48bf/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ycjiang/imgepreviewlibrary/1.1.3/5431cbcb8aea3e4d8edca381338768aaa34520ea/imgepreviewlibrary-1.1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ycjiang/imgepreviewlibrary/1.1.3/bce67c68d7a970239360df275acce10e1e70e78d/imgepreviewlibrary-1.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

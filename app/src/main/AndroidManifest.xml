@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ajiani.maidahui">
+    <!-- 读写联系人 -->
+    <uses-sdk android:targetSdkVersion="28"/>
+
+    <!-- 读联系人权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 写联系人权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- umeng -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 访问WiFi状态，需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 修改WiFi状态，发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 访问网络状态, 检测网络的可用性，需要网络运营商相关信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 访问手机当前状态, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" /> <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".activity.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:launchMode="singleInstance"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".activity.HomeActivity"
+                android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".activity.Main3Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.BannerWebActivity" />
+        <activity android:name=".tencent.TCVodPlayerActivity" />
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/FixSystemWindowTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="index"
+                    android:scheme="maidahui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name="com.example.szing.zxing.android.CaptureActivity" />
+        <activity android:name=".activity.dynamic.PersonActivity" /> <!-- paizhishipin -->
+        <activity android:name=".activity.dynamic.TakePhotoActivity">
+
+        </activity> <!-- 发布动态的下一步 -->
+        <activity android:name=".activity.dynamic.ReleaseActivity" />
+        <activity android:name=".activity.dynamic.TCVideoCutterActivity" />
+        <activity android:name=".activity.dynamic.VideoEditActivity" />
+        <activity android:name=".activity.mine.BindMailBoxActivity" />
+        <activity android:name=".activity.dynamic.ViolateActivity" />
+        <activity android:name=".activity.dynamic.ReportVideoActivity" />
+        <activity android:name=".activity.dynamic.DynamicSeacherActivity" />
+        <activity android:name=".fragment.dynamic.VideosActivity"/>
+        <activity android:name=".activity.dynamic.txrecord.PictureSelActivity"
+            android:launchMode="singleTop"
+            />
+        <activity android:name=".activity.dynamic.VideoReleaaseActivity"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".activity.dynamic.ShopActivity"
+            android:theme="@style/NoTitleTranslucentTheme" />
+        <activity android:name=".activity.dynamic.SearchMusic" />
+        <activity android:name=".activity.dynamic.PrivateActivity" />
+        <activity android:name=".activity.dynamic.VideoActivity" />
+        <activity android:name=".activity.dynamic.PictureJoinActivity" />
+        <activity android:name=".activity.dynamic.VideoCutActivity" />
+        <activity android:name=".activity.dynamic.txrecord.EffectActivity"/>
+        <activity android:name=".activity.dynamic.SearchShopActivity"/>
+        <!--视频详情-->
+        <activity android:name=".activity.dynamic.video.VideoPlayerActivity"/>
+        <activity android:name=".activity.mine.RechargeActivity" />
+        <!--添加商品-->
+        <activity android:name=".activity.dynamic.AddShopActivity"/>
+        <!--音乐位置-->
+        <activity android:name=".activity.dynamic.MusicActivity"/>
+        <!--位置 -->
+        <activity android:name=".activity.dynamic.AddressActivity"/>
+        <!--图片编辑-->
+        <activity android:name=".activity.dynamic.picture.PictureEditerActivity"/>
+        <activity android:name=".activity.mine.BindWechatActivity" />
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.dynamic.FriendsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.dynamic.SelectTalk" />
+        <activity android:name=".activity.login.PasswActivity" />
+        <activity android:name=".activity.login.FindPassActivity" />
+        <activity android:name=".activity.login.PhoneActivity" />
+        <activity android:name=".activity.chat.ChatCommentActivity" />
+        <activity android:name=".activity.chat.FansActivity" />
+        <activity android:name=".activity.chat.ChatStarActivity" />
+        <activity android:name=".activity.chat.LogisticsActivity" />
+        <activity android:name=".activity.chat.NewsAssistant" />
+        <activity android:name=".activity.chat.InteractActivity" />
+        <activity android:name=".activity.chat.ServiceSettActivity" />
+        <activity android:name=".activity.chat.ChatActivity" />
+        <activity android:name=".activity.chat.Chat3Activity" />
+        <activity android:name=".activity.chat.ChatSetActivity" />
+        <activity android:name=".activity.chat.ChatReportAct" />
+        <activity android:name=".activity.chat.ChatImageActivity" />
+        <activity
+            android:name=".activity.chat.TransferPayActivity"
+            android:theme="@style/NoTitleTranslucentTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.chat.TransferActivity" />
+        <activity android:name=".activity.chat.ShopInfoActivity" />
+        <activity
+            android:name=".activity.chat.Chat2Activity"
+            android:launchMode="singleTask" />
+        <activity android:name=".fragment.Upload" />
+        <activity
+            android:name=".activity.mine.PasswordPay"
+            android:theme="@style/NoTitleTranslucentTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.dynamic.ReportActivity" />
+        <activity android:name=".activity.mine.IntengralActivity" />
+        <activity android:name=".activity.mine.IntegralDetailsActivity" />
+        <activity
+            android:name=".activity.mine.OrderInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.SettActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.mine.SetPayPass2" />
+        <activity android:name=".RecordActivity" />
+        <activity android:name=".activity.ViewPagerLayoutManagerActivity" />
+        <activity android:name=".activity.mine.CommentActivity" />
+        <activity android:name=".activity.mine.BindPhoneActivity" />
+        <activity android:name=".activity.mine.RestantActivity" />
+        <activity android:name=".activity.mine.WebManagerActivity" />
+        <activity android:name=".activity.mine.RestantDetailsActivity" />
+        <activity android:name=".activity.mine.MineDynamicActivity" />
+        <activity android:name=".activity.mine.BindAliPayActivity" />
+        <activity android:name=".activity.mine.AutonymActivity" />
+        <activity android:name=".activity.mine.HeadImgActivity" />
+        <activity android:name=".activity.mine.BillInfoActivity" />
+        <activity android:name=".activity.mine.AutonymWinActivity" />
+        <activity android:name=".activity.mine.WithdrawActivity" />
+        <activity android:name=".activity.mine.SetInfoAvtivity" />
+        <activity android:name=".activity.mine.BindAliWinAct" />
+        <activity android:name=".activity.mine.SetVerifyActivity" />
+        <activity android:name=".activity.mine.VerifyActivity" />
+        <activity
+            android:name=".activity.mine.AccountActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.mine.AccountBindActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.mine.WithdrawPassActivity" />
+        <activity
+            android:name=".activity.mine.MineProductActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.mine.AutonymASetting" />
+        <activity android:name=".activity.mine.SetPayPass" />
+        <activity android:name=".activity.mine.EarDetaile" />
+        <activity android:name=".activity.mine.ChangePhone" />
+        <activity android:name=".activity.mine.LookAutonyma" />
+        <activity android:name=".activity.mine.AboutActivity" />
+        <activity android:name=".activity.mine.MoreCommentActivity" /> <!-- service -->
+        <service android:name=".services.RecordingService" />
+        <service android:name=".services.MusicService" />
+        <!-- more managwer| -->
+        <service android:name=".services.MusicService3" /> <!-- more managwer| -->
+        <service android:name=".services.MessageService" />
+
+        <activity android:name=".activity.mine.MoreManageActivity" /> <!-- umenglogin -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 腾讯地图 -->
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="BE2BZ-I7NKJ-7VRFP-F2MJA-UVTM6-P3B47" />
+    </application>
+</manifest>

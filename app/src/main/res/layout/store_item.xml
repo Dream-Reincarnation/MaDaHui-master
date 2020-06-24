@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/store_rela"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#313133"
+    android:layout_height="@dimen/xdp_60">
+
+     <ImageView
+         android:layout_marginLeft="@dimen/xdp_12"
+         android:id="@+id/store_img"
+         android:layout_centerVertical="true"
+         android:layout_width="@dimen/xdp_40"
+         android:layout_height="@dimen/xdp_40" />
+
+    <TextView
+        android:layout_marginTop="@dimen/xdp_15"
+        android:id="@+id/store_name"
+        android:layout_width="wrap_content"
+        android:text="店铺名称"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/xsp_15"
+        android:textColor="@color/white"
+
+        android:layout_toRightOf="@id/store_img"
+        android:layout_marginLeft="@dimen/xdp_12"
+        />
+    <ImageView
+        android:id="@+id/store_type"
+        android:layout_marginTop="@dimen/xdp_15"
+        android:layout_width="@dimen/xdp_48"
+        android:layout_height="@dimen/xdp_17"
+        android:layout_marginLeft="@dimen/xdp_10"
+        android:layout_toRightOf="@id/store_name"
+        />
+    <TextView
+        android:id="@+id/store_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/xsp_11"
+        android:text="店铺介绍"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/store_name"
+        android:layout_toRightOf="@id/store_img"
+        android:layout_marginLeft="@dimen/xdp_12"
+        />
+</RelativeLayout>
